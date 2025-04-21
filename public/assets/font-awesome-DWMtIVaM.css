@@ -1,0 +1,123 @@
+:root {
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
+
+i{
+    font-style: normal !important;
+}
+.fa-solid,
+.fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fa-spin {
+    animation: fa-spin 2s infinite linear;
+}
+@keyframes fa-spin {
+    0% {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+.fa-search:before {
+    content: "\f002";
+}
+.fa-heart:before {
+    content: "\f004";
+}
+.fa-star:before {
+    content: "\f005";
+}
+.fa-user:before {
+    content: "\f007";
+}
+.fa-home:before {
+    content: "\f015";
+}
+.fa-map-marker:before {
+    content: "\f041";
+}
+.fa-times-circle:before {
+    content: "\f057";
+}
+.fa-plus:before {
+    content: "\f067";
+}
+.fa-minus:before {
+    content: "\f068";
+}
+.fa-gift:before {
+    content: "\f06b";
+}
+.fa-phone:before {
+    content: "\f095";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-facebook:before {
+    content: "\f09a";
+}
+.fa-arrow-circle-right:before {
+    content: "\f0a9";
+}
+.fa-truck:before {
+    content: "\f0d1";
+}
+.fa-pinterest:before {
+    content: "\f0d2";
+}
+.fa-envelope:before {
+    content: "\f0e0";
+}
+.fa-mobile:before {
+    content: "\f10b";
+}
+.fa-reply:before {
+    content: "\f112";
+}
+.fa-instagram:before {
+    content: "\f16d";
+}
+.fa-recycle:before {
+    content: "\f1b8";
+}
+.fa-life-ring:before {
+    content: "\f1cd";
+}
+.fa-circle-o-notch:before {
+    content: "\f1ce";
+}
+.fa-vimeo:before {
+    content: "\f27d";
+}
+.fa-credit-card-alt:before {
+    content: "\f283";
+}
+.fa-shopping-basket:before {
+    content: "\f291";
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.fa-bell:before {
+    content: "\f0f3";
+}
