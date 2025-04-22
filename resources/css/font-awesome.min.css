@@ -1,42 +1,8 @@
-/*!
-
- *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
-
- *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)*/
-
-@font-face {
-    font-family: "FontAwesome";
-    src: url("/assets/fonts/fontawesome-webfont3e6e.eot?v=4.7.0");
-    src: url("/assets/fonts/fontawesome-webfontd41d.eot?#iefix&v=4.7.0")
-            format("embedded-opentype"),
-        url("/assets/fonts/fontawesome-webfont3e6e.woff2?v=4.7.0")
-            format("woff2"),
-        url("/assets/fonts/fontawesome-webfont3e6e.woff?v=4.7.0") format("woff"),
-        url("/assets/fonts/fontawesome-webfont3e6e.ttf?v=4.7.0")
-            format("truetype"),
-        url("/assets/fonts/fontawesome-webfont3e6e.svg?v=4.7.0#fontawesomeregular")
-            format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
 :root {
     --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
 }
 
-@font-face {
-    font-family: "Font Awesome 6 Free";
-
-    font-style: normal;
-
-    font-weight: 900;
-
-    font-display: block;
-
-    src: url("/assets/webfonts/fa-solid-900.woff2") format("woff2"),
-        url("/assets/webfonts/fa-solid-900.ttf") format("truetype");
-}
-i{
+i {
     font-style: normal !important;
 }
 .fa-solid,

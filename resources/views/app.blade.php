@@ -9,6 +9,7 @@
     <!-- Styles -->
     @vite(['resources/css/app.css', 'resources/css/font-awesome.min.css', 'resources/css/bootstrap.min.css', 'resources/css/owl.carousel.min.css', 'resources/css/flexslider.css', 'resources/css/style.css', 'resources/css/color-01.css'])
 
+    
     <link rel="shortcut icon" href="{{ asset('assets/images/favicon.ico') }}" />
 
     <style>

@@ -19,7 +19,7 @@ const useCartState = defineStore("CART", () => {
   };
 });
 const API = axios.create({
-  baseURL: "http://localhost:8000/_/api/",
+  baseURL: `${"http://localhost:8000"}/_/api/`,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
