@@ -6355,15 +6355,15 @@ const _sfc_main$2 = {
       var _a;
       _push(`<div${ssrRenderAttrs(mergeProps({
         class: ["cart-drawer", { "cart-drawer--open": unref(DRAWER).isOpen }]
-      }, _attrs))} data-v-f64bbab3><div class="cart-drawer__overlay" data-v-f64bbab3></div><div class="cart-drawer__content" data-v-f64bbab3><div class="cart-drawer__header" data-v-f64bbab3><h2 class="cart-drawer__title" data-v-f64bbab3>Your Cart</h2><button class="cart-drawer__close" data-v-f64bbab3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-f64bbab3><line x1="18" y1="6" x2="6" y2="18" data-v-f64bbab3></line><line x1="6" y1="6" x2="18" y2="18" data-v-f64bbab3></line></svg></button></div>`);
+      }, _attrs))} data-v-2b3e3e53><div class="cart-drawer__overlay" data-v-2b3e3e53></div><div class="cart-drawer__content" data-v-2b3e3e53><div class="cart-drawer__header" data-v-2b3e3e53><h2 class="cart-drawer__title" data-v-2b3e3e53>Your Cart</h2><button class="cart-drawer__close" data-v-2b3e3e53><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-2b3e3e53><line x1="18" y1="6" x2="6" y2="18" data-v-2b3e3e53></line><line x1="6" y1="6" x2="18" y2="18" data-v-2b3e3e53></line></svg></button></div>`);
       if (unref(DRAWER).drawerContent) {
-        _push(`<div class="cart-drawer__body" data-v-f64bbab3><div class="product-gallery" data-v-f64bbab3><ul data-v-f64bbab3><!--[-->`);
+        _push(`<div class="cart-drawer__body" data-v-2b3e3e53><div class="product-gallery" data-v-2b3e3e53><ul data-v-2b3e3e53><!--[-->`);
         ssrRenderList(unref(DRAWER).drawerContent.images.split(","), (img, index) => {
-          _push(`<li data-v-f64bbab3><img${ssrRenderAttr("src", `/assets/images/products/${img}`)} alt="product images" data-v-f64bbab3></li>`);
+          _push(`<li data-v-2b3e3e53><img${ssrRenderAttr("src", `/assets/images/products/${img}`)} alt="product images" data-v-2b3e3e53></li>`);
         });
-        _push(`<!--]--></ul></div><br data-v-f64bbab3><div data-v-f64bbab3><h3 class="font-medium mb-3" data-v-f64bbab3>${ssrInterpolate(unref(DRAWER).drawerContent.name)}</h3><h4 class="font-bold" data-v-f64bbab3>$${ssrInterpolate(unref(DRAWER).drawerContent.price)}</h4></div>`);
+        _push(`<!--]--></ul></div><br data-v-2b3e3e53><div data-v-2b3e3e53><h3 class="font-medium mb-3" data-v-2b3e3e53>${ssrInterpolate(unref(DRAWER).drawerContent.name)}</h3><h4 class="font-bold" data-v-2b3e3e53>$${ssrInterpolate(unref(DRAWER).drawerContent.price)}</h4></div>`);
         if ((_a = unref(DRAWER).drawerContent.variants) == null ? void 0 : _a.length) {
-          _push(`<div data-v-f64bbab3>`);
+          _push(`<div data-v-2b3e3e53>`);
           _push(ssrRenderComponent(_sfc_main$c, {
             variants: unref(DRAWER).drawerContent.variants,
             variantType: unref(DRAWER).drawerContent.variantType,
@@ -6371,14 +6371,14 @@ const _sfc_main$2 = {
           }, null, _parent));
           _push(`</div>`);
         } else {
-          _push(`<div class="mt-4 mb-2" data-v-f64bbab3>`);
+          _push(`<div class="mt-4 mb-2" data-v-2b3e3e53>`);
           _push(ssrRenderComponent(AddToCartButton, {
             productId: unref(DRAWER).drawerContent.id,
             drawer: false
           }, null, _parent));
           _push(`</div>`);
         }
-        _push(`<a${ssrRenderAttr("href", `/products/${unref(DRAWER).drawerContent.slug}`)} class="text-gray-700 underline text-base hover:text-gray-100" data-v-f64bbab3>view more details</a></div>`);
+        _push(`<a${ssrRenderAttr("href", `/products/${unref(DRAWER).drawerContent.slug}`)} class="text-gray-700 underline text-base hover:text-gray-100" data-v-2b3e3e53>view more details</a></div>`);
       } else {
         _push(`<!---->`);
       }
@@ -6392,7 +6392,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/AddToCartDrawer.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AddToCartDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-f64bbab3"]]);
+const AddToCartDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-2b3e3e53"]]);
 const _sfc_main$1 = {
   __name: "ProductSkelton",
   __ssrInlineRender: true,

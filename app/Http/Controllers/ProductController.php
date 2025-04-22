@@ -168,6 +168,7 @@ class ProductController extends Controller
      */
     protected function getFilteredProducts($query)
     {
+        
         return $this->applyFilters($query)
             ->select(self::PRODUCT_LIST_FIELDS)
             ->paginate(15);

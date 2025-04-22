@@ -17,7 +17,8 @@
                             <ul>
 
 
-                                <NotificationBell :initial-notifications="$page.props.notifications || []" />
+                                <NotificationBell :initial-notifications="$page.props.notifications || []"
+                                    v-if="$page.props.auth.user" />
 
 
                                 <li v-if="$page.props.auth.user" class="menu-item menu-item-has-children parent">

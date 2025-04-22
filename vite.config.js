@@ -28,39 +28,7 @@ export default defineConfig({
             },
         }),
 
-        purgeCss({
-            content: [
-                "./resources/js/**/*.vue",
-                "./resources/views/**/*.blade.php",
-            ],
-            safelist: [
-                // Laravel-specific
-                "is-invalid",
-                "is-valid",
-                "invalid-feedback",
-                // Vue transitions
-                /-enter-active$/,
-                /-leave-active$/,
-                /-enter-from$/,
-                /-leave-to$/,
-                // Dynamic classes (add your project-specific ones)
-                "active",
-                "show",
-                "hidden",
-                /^nav-/,
-                /^bg-/,
-                /^text-/,
-                /^hover:/,
-                /^focus:/,
-            ],
-            defaultExtractor: (content) => {
-                const broadMatches =
-                    content.match(/[^<>"'`\s]*[^<>"'`\s:]/g) || [];
-                const innerMatches =
-                    content.match(/[^<>"'`\s.()]*[^<>"'`\s.():]/g) || [];
-                return broadMatches.concat(innerMatches);
-            },
-        }),
+  
     ],
     optimizeDeps: {
         include: ["pusher-js", "laravel-echo"],
