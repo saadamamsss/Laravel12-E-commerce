@@ -205,9 +205,13 @@ const _sfc_main$U = {
     return (_ctx, _push, _parent, _attrs) => {
       var _a, _b, _c;
       _push(`<!--[--><header id="header" class="header header-style-1"><div class="container-fluid"><div class="row"><div class="topbar-menu-area"><div class="container"><div class="topbar-menu left-menu"><ul><li class="menu-item"><a title="Hotline: (+123) 456 789" href="#"><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a></li></ul></div><div class="topbar-menu right-menu"><ul>`);
-      _push(ssrRenderComponent(_sfc_main$V, {
-        "initial-notifications": _ctx.$page.props.notifications || []
-      }, null, _parent));
+      if (_ctx.$page.props.auth.user) {
+        _push(ssrRenderComponent(_sfc_main$V, {
+          "initial-notifications": _ctx.$page.props.notifications || []
+        }, null, _parent));
+      } else {
+        _push(`<!---->`);
+      }
       if (_ctx.$page.props.auth.user) {
         _push(`<li class="menu-item menu-item-has-children parent"><a class="item-header cursor-pointer" title="User">${ssrInterpolate((_a = _ctx.$page.props.auth.user) == null ? void 0 : _a.name)} <i class="fa fa-user" aria-hidden="true"></i></a>`);
         if (((_b = _ctx.$page.props.auth.user) == null ? void 0 : _b.role) == "ADM") {

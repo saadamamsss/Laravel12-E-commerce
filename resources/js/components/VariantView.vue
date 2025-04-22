@@ -128,8 +128,6 @@ function decreaseQty() {
 </script>
 
 
-
-
 <style>
 .main-attributes input:checked+label,
 .main-attributes label:hover {

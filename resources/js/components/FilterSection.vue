@@ -152,6 +152,7 @@ function applyFilter() {
 function clearFilters() {
     locationURL.value = locationURL.value.split('?')[0];
     window.history.pushState(null, null, locationURL.value);
+    Object.assign(FILTERS , {search: [],color: [],size: [],brand: [],price: []});
     // 
     emit('refetch', "");
 }

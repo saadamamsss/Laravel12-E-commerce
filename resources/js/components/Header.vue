@@ -15,8 +15,6 @@
 
                         <div class="topbar-menu right-menu">
                             <ul>
-
-
                                 <NotificationBell :initial-notifications="$page.props.notifications || []"
                                     v-if="$page.props.auth.user" />
 

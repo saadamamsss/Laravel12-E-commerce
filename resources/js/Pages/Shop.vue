@@ -134,13 +134,10 @@ const url_search = computed(() => {
 });
 
 const Getproducts = async (url) => {
-    const params = new URLSearchParams(url_search.value);
 
     try {
 
-        const { data } = await API.get(url, {
-            params: Object.fromEntries(params.entries()),
-        });
+        const { data } = await API.get(url);
         products.value = data.data;
         pagination.value = { ...data, data: undefined };
 
@@ -157,8 +154,12 @@ const routeParam = computed(() => {
     return `shop-products/${props.pageType + pathname}`;
 });
 
-Getproducts(routeParam.value);
-
+function initGettingProducts() {
+    const params = new URLSearchParams(url_search.value);
+    const search = params.toString();
+    Getproducts(search ? `${routeParam.value}?${search}` : routeParam.value);
+}
+initGettingProducts();
 
 const pginationClick = (url) => {
     Getproducts(url);
