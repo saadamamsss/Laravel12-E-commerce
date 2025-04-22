@@ -1,4 +1,4 @@
-import { ref, computed, onMounted, onUnmounted, mergeProps, unref, withCtx, createTextVNode, useSSRContext, createVNode, toDisplayString, resolveDynamicComponent, createBlock, openBlock, Fragment, renderList, renderSlot, createCommentVNode, withModifiers, mergeModels, useModel, withDirectives, vModelText, vModelCheckbox, watch, onBeforeUnmount, resolveComponent, Suspense, vModelSelect, reactive, vModelRadio, withKeys, nextTick, createSSRApp, h } from "vue";
+import { ref, computed, onMounted, onUnmounted, mergeProps, unref, withCtx, createTextVNode, useSSRContext, createVNode, toDisplayString, resolveDynamicComponent, createBlock, openBlock, Fragment, renderList, renderSlot, createCommentVNode, withModifiers, mergeModels, useModel, watch, onBeforeUnmount, resolveComponent, Suspense, withDirectives, vModelCheckbox, vModelText, vModelSelect, reactive, vModelRadio, withKeys, nextTick, createSSRApp, h } from "vue";
 import { ssrRenderAttrs, ssrRenderList, ssrRenderClass, ssrInterpolate, ssrRenderComponent, ssrRenderStyle, ssrRenderSlot, ssrRenderAttr, ssrIncludeBooleanAttr, ssrLooseContain, ssrLooseEqual, ssrRenderVNode, ssrGetDynamicModelProps, ssrRenderSuspense } from "vue/server-renderer";
 import { usePage, Link, useForm, Head, createInertiaApp } from "@inertiajs/vue3";
 import { defineStore, createPinia } from "pinia";
@@ -19,7 +19,7 @@ const useCartState = defineStore("CART", () => {
   };
 });
 const API = axios.create({
-  baseURL: `${"http://localhost:8000"}/_/api/`,
+  baseURL: `/_/api/`,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
@@ -1868,17 +1868,33 @@ const _sfc_main$F = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       _push(ssrRenderComponent(unref(Head), { title: "Log in" }, null, _parent));
-      _push(`<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8" data-v-3b88f075><div class="max-w-md w-full space-y-8 bg-white p-10 rounded-lg shadow-xl" data-v-3b88f075><h2 class="mt-6 text-center text-3xl font-extrabold text-[#444444]" data-v-3b88f075> Welcome back </h2><p class="mt-2 text-center text-sm text-[#444444]/80" data-v-3b88f075> Sign in to your account </p><form class="mt-8 space-y-6" data-v-3b88f075><div class="rounded-md space-y-4" data-v-3b88f075><div data-v-3b88f075><label for="email" class="block text-sm font-medium text-[#444444] mb-1" data-v-3b88f075>Email address</label><input id="email"${ssrRenderAttr("value", unref(form).email)} type="email" required class="appearance-none relative block w-full px-3 py-3 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="you@example.com" data-v-3b88f075>`);
+      _push(`<div class="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8" data-v-2c53454d><div class="max-w-md w-full space-y-8 bg-white p-10 rounded-lg shadow-xl" data-v-2c53454d><h2 class="mt-6 text-center text-3xl font-extrabold text-[#444444]" data-v-2c53454d> Welcome back </h2><p class="mt-2 text-center text-sm text-[#444444]/80" data-v-2c53454d> Sign in to your account </p><form class="mt-8 space-y-6" data-v-2c53454d><div class="rounded-md space-y-4" data-v-2c53454d><div data-v-2c53454d><label for="email" class="block text-sm font-medium text-[#444444] mb-1" data-v-2c53454d>Email address</label><input id="email"${ssrRenderAttr("value", unref(form).email)} type="email" required class="appearance-none relative block w-full px-3 py-3 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="you@example.com" data-v-2c53454d>`);
       _push(ssrRenderComponent(_sfc_main$L, {
         class: "mt-2",
         message: unref(form).errors.email
       }, null, _parent));
-      _push(`</div><div data-v-3b88f075><label for="password" class="block text-sm font-medium text-[#444444] mb-1" data-v-3b88f075>Password</label><input id="password"${ssrRenderAttr("value", unref(form).password)} type="password" required class="appearance-none relative block w-full px-3 py-3 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-3b88f075>`);
+      _push(`</div><div data-v-2c53454d><label for="password" class="block text-sm font-medium text-[#444444] mb-1" data-v-2c53454d>Password</label><input id="password"${ssrRenderAttr("value", unref(form).password)} type="password" required class="appearance-none relative block w-full px-3 py-3 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-2c53454d>`);
       _push(ssrRenderComponent(_sfc_main$L, {
         class: "mt-2",
         message: unref(form).errors.password
       }, null, _parent));
-      _push(`</div></div><div class="flex items-center justify-between" data-v-3b88f075><div class="flex items-center" data-v-3b88f075><input id="remember-me" type="checkbox" name="remember"${ssrIncludeBooleanAttr(Array.isArray(unref(form).remember) ? ssrLooseContain(unref(form).remember, null) : unref(form).remember) ? " checked" : ""} class="h-4 w-4 my-0 text-[#ff2832] focus:ring-[#ff2832]/50 border-[#e6e3de] rounded" data-v-3b88f075><label for="remember-me" class="ml-2 my-0 block text-sm text-[#444444]" data-v-3b88f075> Remember me </label></div><div class="text-sm" data-v-3b88f075><a${ssrRenderAttr("href", unref(route$1)("password.request"))} class="font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-3b88f075> Forgot your password? </a></div></div><div data-v-3b88f075><button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200 shadow-md"${ssrIncludeBooleanAttr(unref(form).processing) ? " disabled" : ""} data-v-3b88f075><span class="absolute left-0 inset-y-0 flex items-center pl-3" data-v-3b88f075><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80 group-hover:text-white" viewBox="0 0 20 20" fill="currentColor" data-v-3b88f075><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" data-v-3b88f075></path></svg></span> Sign in </button></div></form><div class="text-center text-sm text-[#444444]" data-v-3b88f075> Don&#39;t have an account? <a${ssrRenderAttr("href", unref(route$1)("register"))} class="font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-3b88f075> Sign up </a></div></div></div><!--]-->`);
+      _push(`</div></div><div class="flex items-center justify-between" data-v-2c53454d><div class="flex items-center" data-v-2c53454d><input id="remember-me" type="checkbox" name="remember"${ssrIncludeBooleanAttr(Array.isArray(unref(form).remember) ? ssrLooseContain(unref(form).remember, null) : unref(form).remember) ? " checked" : ""} class="h-4 w-4 my-0 text-[#ff2832] focus:ring-[#ff2832]/50 border-[#e6e3de] rounded" data-v-2c53454d><label for="remember-me" class="ml-2 my-0 block text-sm text-[#444444]" data-v-2c53454d> Remember me </label></div><div class="text-sm" data-v-2c53454d><a${ssrRenderAttr("href", unref(route$1)("password.request"))} class="font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-2c53454d> Forgot your password? </a></div></div><div data-v-2c53454d><button type="submit" class="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200 shadow-md"${ssrIncludeBooleanAttr(unref(form).processing) ? " disabled" : ""} data-v-2c53454d><span class="absolute left-0 inset-y-0 flex items-center pl-3" data-v-2c53454d><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white/80 group-hover:text-white" viewBox="0 0 20 20" fill="currentColor" data-v-2c53454d><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" data-v-2c53454d></path></svg></span> Sign in </button></div></form><div class="text-center text-sm text-[#444444]" data-v-2c53454d> Don&#39;t have an account? `);
+      _push(ssrRenderComponent(unref(Link), {
+        href: unref(route$1)("register"),
+        class: "font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200"
+      }, {
+        default: withCtx((_, _push2, _parent2, _scopeId) => {
+          if (_push2) {
+            _push2(` Sign up `);
+          } else {
+            return [
+              createTextVNode(" Sign up ")
+            ];
+          }
+        }),
+        _: 1
+      }, _parent));
+      _push(`</div></div></div><!--]-->`);
     };
   }
 };
@@ -1888,7 +1904,7 @@ _sfc_main$F.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Login.vue");
   return _sfc_setup$F ? _sfc_setup$F(props, ctx) : void 0;
 };
-const Login = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["__scopeId", "data-v-3b88f075"]]);
+const Login = /* @__PURE__ */ _export_sfc(_sfc_main$F, [["__scopeId", "data-v-2c53454d"]]);
 const __vite_glob_0_4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Login
@@ -1903,266 +1919,48 @@ const _sfc_main$E = {
       password: "",
       password_confirmation: ""
     });
-    const submit = () => {
-      form.post(route$1("register"), {
-        onFinish: () => form.reset("password", "password_confirmation")
-      });
-    };
     return (_ctx, _push, _parent, _attrs) => {
-      _push(ssrRenderComponent(_sfc_main$M, _attrs, {
+      _push(`<!--[-->`);
+      _push(ssrRenderComponent(unref(Head), { title: "Register" }, null, _parent));
+      _push(`<div class="min-h-screen flex items-center justify-center bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8" data-v-5624f707><div class="max-w-md w-full bg-white px-10 py-6 rounded-xl shadow-lg" data-v-5624f707><h2 class="text-center text-3xl font-bold text-[#444444] mb-2" data-v-5624f707> Create your account </h2><p class="text-center text-[#444444]/80 mb-8" data-v-5624f707> Join our community today </p><form class="space-y-4" data-v-5624f707><div data-v-5624f707><div class="relative" data-v-5624f707><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-5624f707><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-5624f707><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" data-v-5624f707></path></svg></div><input id="email"${ssrRenderAttr("value", unref(form).name)} type="text" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="Full Name" data-v-5624f707></div>`);
+      _push(ssrRenderComponent(_sfc_main$L, {
+        message: unref(form).errors.name
+      }, null, _parent));
+      _push(`</div><div data-v-5624f707><div class="relative" data-v-5624f707><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-5624f707><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-5624f707><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" data-v-5624f707></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" data-v-5624f707></path></svg></div><input id="email"${ssrRenderAttr("value", unref(form).email)} type="email" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="Email Address" data-v-5624f707></div>`);
+      _push(ssrRenderComponent(_sfc_main$L, {
+        message: unref(form).errors.email
+      }, null, _parent));
+      _push(`</div><div data-v-5624f707><div class="relative" data-v-5624f707><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-5624f707><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-5624f707><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" data-v-5624f707></path></svg></div><input id="password"${ssrRenderAttr("value", unref(form).password)} type="password" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-5624f707></div>`);
+      _push(ssrRenderComponent(_sfc_main$L, {
+        message: unref(form).errors.password
+      }, null, _parent));
+      _push(`<p class="mt-1 text-xs text-[#444444]/60" data-v-5624f707>Minimum 8 characters</p></div><div data-v-5624f707><div class="relative" data-v-5624f707><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-5624f707><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-5624f707><path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd" data-v-5624f707></path></svg></div><input id="password_confirmation"${ssrRenderAttr("value", unref(form).password_confirmation)} type="password" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-5624f707></div>`);
+      _push(ssrRenderComponent(_sfc_main$L, {
+        message: unref(form).errors.password_confirmation
+      }, null, _parent));
+      _push(`</div><div class="flex items-start" data-v-5624f707><div class="flex items-center h-5" data-v-5624f707><input id="terms"${ssrIncludeBooleanAttr(Array.isArray(unref(form).terms) ? ssrLooseContain(unref(form).terms, null) : unref(form).terms) ? " checked" : ""} type="checkbox" class="focus:ring-[#ff2832] h-4 w-4 text-[#ff2832] border-[#e6e3de] rounded" required data-v-5624f707></div><div class="ml-3 text-sm" data-v-5624f707><label for="terms" class="font-medium text-[#444444]" data-v-5624f707> I agree to the <a href="#" class="text-[#ff2832] hover:text-[#ff2832]/80" data-v-5624f707>Terms</a> and <a href="#" class="text-[#ff2832] hover:text-[#ff2832]/80" data-v-5624f707>Privacy Policy</a></label></div></div><button type="submit"${ssrIncludeBooleanAttr(unref(form).processing) ? " disabled" : ""} class="${ssrRenderClass([{ "opacity-75 cursor-not-allowed": unref(form).processing }, "w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200 transform hover:scale-[1.02]"])}" data-v-5624f707>`);
+      if (unref(form).processing) {
+        _push(`<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-v-5624f707><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" data-v-5624f707></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" data-v-5624f707></path></svg>`);
+      } else {
+        _push(`<!---->`);
+      }
+      _push(` ${ssrInterpolate(unref(form).processing ? "Creating account..." : "Sign up")}</button></form><div class="mt-6 text-center text-sm text-[#444444]" data-v-5624f707> Already have an account? `);
+      _push(ssrRenderComponent(unref(Link), {
+        href: unref(route$1)("login"),
+        class: "font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200"
+      }, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(ssrRenderComponent(unref(Head), { title: "Register" }, null, _parent2, _scopeId));
-            _push2(`<div class="min-h-screen flex items-center justify-center bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8" data-v-999498af${_scopeId}><div class="max-w-md w-full bg-white px-10 py-6 rounded-xl shadow-lg" data-v-999498af${_scopeId}><h2 class="text-center text-3xl font-bold text-[#444444] mb-2" data-v-999498af${_scopeId}> Create your account </h2><p class="text-center text-[#444444]/80 mb-8" data-v-999498af${_scopeId}> Join our community today </p><form class="space-y-4" data-v-999498af${_scopeId}><div data-v-999498af${_scopeId}><div class="relative" data-v-999498af${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-999498af${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-999498af${_scopeId}><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" data-v-999498af${_scopeId}></path></svg></div><input id="email"${ssrRenderAttr("value", unref(form).name)} type="text" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="Full Name" data-v-999498af${_scopeId}></div>`);
-            _push2(ssrRenderComponent(_sfc_main$L, {
-              message: unref(form).errors.name
-            }, null, _parent2, _scopeId));
-            _push2(`</div><div data-v-999498af${_scopeId}><div class="relative" data-v-999498af${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-999498af${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-999498af${_scopeId}><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" data-v-999498af${_scopeId}></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" data-v-999498af${_scopeId}></path></svg></div><input id="email"${ssrRenderAttr("value", unref(form).email)} type="email" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="Email Address" data-v-999498af${_scopeId}></div>`);
-            _push2(ssrRenderComponent(_sfc_main$L, {
-              message: unref(form).errors.email
-            }, null, _parent2, _scopeId));
-            _push2(`</div><div data-v-999498af${_scopeId}><div class="relative" data-v-999498af${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-999498af${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-999498af${_scopeId}><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" data-v-999498af${_scopeId}></path></svg></div><input id="password"${ssrRenderAttr("value", unref(form).password)} type="password" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-999498af${_scopeId}></div>`);
-            _push2(ssrRenderComponent(_sfc_main$L, {
-              message: unref(form).errors.password
-            }, null, _parent2, _scopeId));
-            _push2(`<p class="mt-1 text-xs text-[#444444]/60" data-v-999498af${_scopeId}>Minimum 8 characters</p></div><div data-v-999498af${_scopeId}><div class="relative" data-v-999498af${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-999498af${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-999498af${_scopeId}><path fill-rule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z" clip-rule="evenodd" data-v-999498af${_scopeId}></path></svg></div><input id="password_confirmation"${ssrRenderAttr("value", unref(form).password_confirmation)} type="password" required class="pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200" placeholder="••••••••" data-v-999498af${_scopeId}></div>`);
-            _push2(ssrRenderComponent(_sfc_main$L, {
-              message: unref(form).errors.password_confirmation
-            }, null, _parent2, _scopeId));
-            _push2(`</div><div class="flex items-start" data-v-999498af${_scopeId}><div class="flex items-center h-5" data-v-999498af${_scopeId}><input id="terms"${ssrIncludeBooleanAttr(Array.isArray(unref(form).terms) ? ssrLooseContain(unref(form).terms, null) : unref(form).terms) ? " checked" : ""} type="checkbox" class="focus:ring-[#ff2832] h-4 w-4 text-[#ff2832] border-[#e6e3de] rounded" required data-v-999498af${_scopeId}></div><div class="ml-3 text-sm" data-v-999498af${_scopeId}><label for="terms" class="font-medium text-[#444444]" data-v-999498af${_scopeId}> I agree to the <a href="#" class="text-[#ff2832] hover:text-[#ff2832]/80" data-v-999498af${_scopeId}>Terms</a> and <a href="#" class="text-[#ff2832] hover:text-[#ff2832]/80" data-v-999498af${_scopeId}>Privacy Policy</a></label></div></div><button type="submit"${ssrIncludeBooleanAttr(unref(form).processing) ? " disabled" : ""} class="${ssrRenderClass([{ "opacity-75 cursor-not-allowed": unref(form).processing }, "w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200 transform hover:scale-[1.02]"])}" data-v-999498af${_scopeId}>`);
-            if (unref(form).processing) {
-              _push2(`<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" data-v-999498af${_scopeId}><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" data-v-999498af${_scopeId}></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" data-v-999498af${_scopeId}></path></svg>`);
-            } else {
-              _push2(`<!---->`);
-            }
-            _push2(` ${ssrInterpolate(unref(form).processing ? "Creating account..." : "Sign up")}</button></form><div class="mt-6 text-center text-sm text-[#444444]" data-v-999498af${_scopeId}> Already have an account? `);
-            _push2(ssrRenderComponent(unref(Link), {
-              href: unref(route$1)("login"),
-              class: "font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200"
-            }, {
-              default: withCtx((_2, _push3, _parent3, _scopeId2) => {
-                if (_push3) {
-                  _push3(` Sign in `);
-                } else {
-                  return [
-                    createTextVNode(" Sign in ")
-                  ];
-                }
-              }),
-              _: 1
-            }, _parent2, _scopeId));
-            _push2(`</div></div></div>`);
+            _push2(` Sign in `);
           } else {
             return [
-              createVNode(unref(Head), { title: "Register" }),
-              createVNode("div", { class: "min-h-screen flex items-center justify-center bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8" }, [
-                createVNode("div", { class: "max-w-md w-full bg-white px-10 py-6 rounded-xl shadow-lg" }, [
-                  createVNode("h2", { class: "text-center text-3xl font-bold text-[#444444] mb-2" }, " Create your account "),
-                  createVNode("p", { class: "text-center text-[#444444]/80 mb-8" }, " Join our community today "),
-                  createVNode("form", {
-                    class: "space-y-4",
-                    onSubmit: withModifiers(submit, ["prevent"])
-                  }, [
-                    createVNode("div", null, [
-                      createVNode("div", { class: "relative" }, [
-                        createVNode("div", { class: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" }, [
-                          (openBlock(), createBlock("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            class: "h-5 w-5 text-[#444444]/50",
-                            viewBox: "0 0 20 20",
-                            fill: "currentColor"
-                          }, [
-                            createVNode("path", {
-                              "fill-rule": "evenodd",
-                              d: "M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z",
-                              "clip-rule": "evenodd"
-                            })
-                          ]))
-                        ]),
-                        withDirectives(createVNode("input", {
-                          id: "email",
-                          "onUpdate:modelValue": ($event) => unref(form).name = $event,
-                          type: "text",
-                          required: "",
-                          class: "pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200",
-                          placeholder: "Full Name"
-                        }, null, 8, ["onUpdate:modelValue"]), [
-                          [vModelText, unref(form).name]
-                        ])
-                      ]),
-                      createVNode(_sfc_main$L, {
-                        message: unref(form).errors.name
-                      }, null, 8, ["message"])
-                    ]),
-                    createVNode("div", null, [
-                      createVNode("div", { class: "relative" }, [
-                        createVNode("div", { class: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" }, [
-                          (openBlock(), createBlock("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            class: "h-5 w-5 text-[#444444]/50",
-                            viewBox: "0 0 20 20",
-                            fill: "currentColor"
-                          }, [
-                            createVNode("path", { d: "M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" }),
-                            createVNode("path", { d: "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" })
-                          ]))
-                        ]),
-                        withDirectives(createVNode("input", {
-                          id: "email",
-                          "onUpdate:modelValue": ($event) => unref(form).email = $event,
-                          type: "email",
-                          required: "",
-                          class: "pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200",
-                          placeholder: "Email Address"
-                        }, null, 8, ["onUpdate:modelValue"]), [
-                          [vModelText, unref(form).email]
-                        ])
-                      ]),
-                      createVNode(_sfc_main$L, {
-                        message: unref(form).errors.email
-                      }, null, 8, ["message"])
-                    ]),
-                    createVNode("div", null, [
-                      createVNode("div", { class: "relative" }, [
-                        createVNode("div", { class: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" }, [
-                          (openBlock(), createBlock("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            class: "h-5 w-5 text-[#444444]/50",
-                            viewBox: "0 0 20 20",
-                            fill: "currentColor"
-                          }, [
-                            createVNode("path", {
-                              "fill-rule": "evenodd",
-                              d: "M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z",
-                              "clip-rule": "evenodd"
-                            })
-                          ]))
-                        ]),
-                        withDirectives(createVNode("input", {
-                          id: "password",
-                          "onUpdate:modelValue": ($event) => unref(form).password = $event,
-                          type: "password",
-                          required: "",
-                          class: "pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200",
-                          placeholder: "••••••••"
-                        }, null, 8, ["onUpdate:modelValue"]), [
-                          [vModelText, unref(form).password]
-                        ])
-                      ]),
-                      createVNode(_sfc_main$L, {
-                        message: unref(form).errors.password
-                      }, null, 8, ["message"]),
-                      createVNode("p", { class: "mt-1 text-xs text-[#444444]/60" }, "Minimum 8 characters")
-                    ]),
-                    createVNode("div", null, [
-                      createVNode("div", { class: "relative" }, [
-                        createVNode("div", { class: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" }, [
-                          (openBlock(), createBlock("svg", {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            class: "h-5 w-5 text-[#444444]/50",
-                            viewBox: "0 0 20 20",
-                            fill: "currentColor"
-                          }, [
-                            createVNode("path", {
-                              "fill-rule": "evenodd",
-                              d: "M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z",
-                              "clip-rule": "evenodd"
-                            })
-                          ]))
-                        ]),
-                        withDirectives(createVNode("input", {
-                          id: "password_confirmation",
-                          "onUpdate:modelValue": ($event) => unref(form).password_confirmation = $event,
-                          type: "password",
-                          required: "",
-                          class: "pl-5 pr-3 block w-full py-2 border border-[#e6e3de] placeholder-[#444444]/40 text-[#444444] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 focus:z-10 sm:text-sm transition-all duration-200",
-                          placeholder: "••••••••"
-                        }, null, 8, ["onUpdate:modelValue"]), [
-                          [vModelText, unref(form).password_confirmation]
-                        ])
-                      ]),
-                      createVNode(_sfc_main$L, {
-                        message: unref(form).errors.password_confirmation
-                      }, null, 8, ["message"])
-                    ]),
-                    createVNode("div", { class: "flex items-start" }, [
-                      createVNode("div", { class: "flex items-center h-5" }, [
-                        withDirectives(createVNode("input", {
-                          id: "terms",
-                          "onUpdate:modelValue": ($event) => unref(form).terms = $event,
-                          type: "checkbox",
-                          class: "focus:ring-[#ff2832] h-4 w-4 text-[#ff2832] border-[#e6e3de] rounded",
-                          required: ""
-                        }, null, 8, ["onUpdate:modelValue"]), [
-                          [vModelCheckbox, unref(form).terms]
-                        ])
-                      ]),
-                      createVNode("div", { class: "ml-3 text-sm" }, [
-                        createVNode("label", {
-                          for: "terms",
-                          class: "font-medium text-[#444444]"
-                        }, [
-                          createTextVNode(" I agree to the "),
-                          createVNode("a", {
-                            href: "#",
-                            class: "text-[#ff2832] hover:text-[#ff2832]/80"
-                          }, "Terms"),
-                          createTextVNode(" and "),
-                          createVNode("a", {
-                            href: "#",
-                            class: "text-[#ff2832] hover:text-[#ff2832]/80"
-                          }, "Privacy Policy")
-                        ])
-                      ])
-                    ]),
-                    createVNode("button", {
-                      type: "submit",
-                      class: ["w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200 transform hover:scale-[1.02]", { "opacity-75 cursor-not-allowed": unref(form).processing }],
-                      disabled: unref(form).processing
-                    }, [
-                      unref(form).processing ? (openBlock(), createBlock("svg", {
-                        key: 0,
-                        class: "animate-spin -ml-1 mr-3 h-5 w-5 text-white",
-                        xmlns: "http://www.w3.org/2000/svg",
-                        fill: "none",
-                        viewBox: "0 0 24 24"
-                      }, [
-                        createVNode("circle", {
-                          class: "opacity-25",
-                          cx: "12",
-                          cy: "12",
-                          r: "10",
-                          stroke: "currentColor",
-                          "stroke-width": "4"
-                        }),
-                        createVNode("path", {
-                          class: "opacity-75",
-                          fill: "currentColor",
-                          d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                        })
-                      ])) : createCommentVNode("", true),
-                      createTextVNode(" " + toDisplayString(unref(form).processing ? "Creating account..." : "Sign up"), 1)
-                    ], 10, ["disabled"])
-                  ], 32),
-                  createVNode("div", { class: "mt-6 text-center text-sm text-[#444444]" }, [
-                    createTextVNode(" Already have an account? "),
-                    createVNode(unref(Link), {
-                      href: unref(route$1)("login"),
-                      class: "font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200"
-                    }, {
-                      default: withCtx(() => [
-                        createTextVNode(" Sign in ")
-                      ]),
-                      _: 1
-                    }, 8, ["href"])
-                  ])
-                ])
-              ])
+              createTextVNode(" Sign in ")
             ];
           }
         }),
         _: 1
       }, _parent));
+      _push(`</div></div></div><!--]-->`);
     };
   }
 };
@@ -2172,7 +1970,7 @@ _sfc_main$E.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Auth/Register.vue");
   return _sfc_setup$E ? _sfc_setup$E(props, ctx) : void 0;
 };
-const Register = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["__scopeId", "data-v-999498af"]]);
+const Register = /* @__PURE__ */ _export_sfc(_sfc_main$E, [["__scopeId", "data-v-5624f707"]]);
 const __vite_glob_0_5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Register

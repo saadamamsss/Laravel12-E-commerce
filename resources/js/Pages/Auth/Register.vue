@@ -2,7 +2,7 @@
 import GuestLayout from '@/layouts/GuestLayout.vue';
 import InputError from '@/components/InputError.vue';
 import { Head, Link, useForm } from '@inertiajs/vue3';
-import {route} from "ziggy-js";
+import { route } from "ziggy-js";
 const form = useForm({
     name: '',
     email: '',
@@ -18,11 +18,9 @@ const submit = () => {
 </script>
 
 <template>
-    <GuestLayout>
-
 
     <Head title="Register" />
-     <div class="min-h-screen flex items-center justify-center bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8">
+    <div class="min-h-screen flex items-center justify-center bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full bg-white px-10 py-6 rounded-xl shadow-lg">
             <!-- Title -->
             <h2 class="text-center text-3xl font-bold text-[#444444] mb-2">
@@ -148,7 +146,7 @@ const submit = () => {
             </div>
         </div>
     </div>
-</GuestLayout>
+
 </template>
 
 

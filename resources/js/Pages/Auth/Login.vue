@@ -104,30 +104,12 @@ const submit = () => {
             <!-- Sign Up Link -->
             <div class="text-center text-sm text-[#444444]">
                 Don't have an account?
-                <a :href="route('register')" class="font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200">
+                <Link :href="route('register')" class="font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200">
                     Sign up
-                </a>
+                </Link>
             </div>
         </div>
     </div>
-
-
-    <!-- <script setup>
-import { useForm } from '@inertiajs/vue3'
-
-const form = useForm({
-  email: '',
-  password: '',
-  remember: false,
-})
-
-const submit = () => {
-  form.post('/login', {
-    onFinish: () => form.reset('password'),
-  })
-}
-</script> -->
-
 
 </template>
 
