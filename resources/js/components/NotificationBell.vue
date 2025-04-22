@@ -169,7 +169,7 @@ const handleGroupClick = async (group) => {
     // Mark all in group as read if any are unread
     if (group.unreadCount > 0) {
         try {
-            const { data } = await API.patch('notifications-read-group', { ids: group.primaryIds });
+            const { data } = await API.post('notifications-read-group', { ids: group.primaryIds });
 
             if (data.success) {
                 // Update local state
@@ -192,7 +192,7 @@ const handleGroupClick = async (group) => {
 
 const markAllAsRead = async () => {
     try {
-        const { data } = await API.patch('notifications-read-all', {});
+        const { data } = await API.post('notifications-read-all', {});
         if (data.success) {
             notifications.value = notifications.value.map(n => ({ ...n, read: true }));
         }

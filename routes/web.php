@@ -34,15 +34,15 @@ Route::get('/cart', [CartController::class, "Index"])->name("cart");
 
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/checkout', [CheckoutController::class, "Index"])->middleware( 'cart-has-items')->name('checkout');
-    
+    Route::get('/checkout', [CheckoutController::class, "Index"])->middleware('cart-has-items')->name('checkout');
+
     Route::post('/place-order', [CheckoutController::class, "placeOrder"])->name("place.order");
-       
+
     Route::get('/order-confirmation/{orderID}', [CheckoutController::class, 'checkoutSuccess'])->name("checkout.success");
 });
 
 
-Route::get('/about-us', function(){
+Route::get('/about-us', function () {
     return Inertia::render("About");
 })->name('contact.index');
 
@@ -78,11 +78,14 @@ Route::prefix('/_/api/')->group(function () {
 
     Route::get('shop-products/{type}/{slug}', [ProductController::class, "fetchProducts"])->name("shop.all");
     // 
-    Route::get('product-collection', [ProductController::class, "getProductByCollection"])->middleware("cache.response:500");;
+    Route::get('product-collection', [ProductController::class, "getProductByCollection"])->middleware("cache.response:500");
+    ;
     // 
-    Route::get('find-product-withId', [ProductController::class, "findProduct"])->middleware("cache.response:500");;
+    Route::get('find-product-withId', [ProductController::class, "findProduct"])->middleware("cache.response:500");
+    ;
     // 
-    Route::get('product-categories', [CategoryController::class, "getCategoriesWithProducts"])->middleware("cache.response:500");;
+    Route::get('product-categories', [CategoryController::class, "getCategoriesWithProducts"])->middleware("cache.response:500");
+    ;
 
     // 
     Route::post('add-product-to-cart', [CartController::class, "addItemToCart"]);
@@ -96,18 +99,18 @@ Route::prefix('/_/api/')->group(function () {
     // 
     Route::get('get-orders', [OrderController::class, "getOrders"])->middleware(["auth", "verified"]);
     // 
-    Route::patch('set-address-default', [ProfileController::class, "setDefaultAddress"])->middleware(["auth", "verified"]);
+    Route::post('set-address-default', [ProfileController::class, "setDefaultAddress"])->middleware(["auth", "verified"]);
     Route::delete('delete-address', [ProfileController::class, "deleteAddress"])->middleware(["auth", "verified"]);
     Route::post('add-new-address', [ProfileController::class, "addNewAddress"])->middleware(["auth", "verified"]);
-    Route::patch('update-address', [ProfileController::class, "updateAddress"])->middleware(["auth", "verified"]);
+    Route::post('update-address', [ProfileController::class, "updateAddress"])->middleware(["auth", "verified"]);
 
     // 
     Route::post('add-review', [ProfileController::class, "addReview"])->middleware(["auth", "verified"]);
-    
+
     // 
-    Route::patch('notifications-read-all', [NotificationController::class, "markAllAsRead"])->middleware(["auth", "verified"])->name("notifications.read-all");
-    Route::patch('notifications-read-group', [NotificationController::class, "markGroupAsRead"])->middleware(["auth", "verified"])->name("notifications.read-group");
-    
+    Route::post('notifications-read-all', [NotificationController::class, "markAllAsRead"])->middleware(["auth", "verified"])->name("notifications.read-all");
+    Route::post('notifications-read-group', [NotificationController::class, "markGroupAsRead"])->middleware(["auth", "verified"])->name("notifications.read-group");
+
     Route::get('recommended-products', [ProductController::class, "recommendedProducts"])->middleware("cache.response:100");
 
 });

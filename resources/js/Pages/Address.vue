@@ -91,7 +91,7 @@ const showAddForm = ref(false);
 
 const setDefaultAddress = async (id) => {
     try {
-        const { data } = await API.patch("set-address-default", id);
+        const { data } = await API.post("set-address-default", id);
         if (data.success) {
             resetDefaultAddress(id);
             changeDefaultAddress(id);

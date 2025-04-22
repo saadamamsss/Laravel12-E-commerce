@@ -140,7 +140,7 @@ const submitForm = async () => {
 
     if (props.address?.id) {
         try {
-            const { data } = await API.patch('update-address');
+            const { data } = await API.post('update-address');
             emit("applycahnges", formData.value);
 
 
