@@ -1,9 +1,12 @@
 <template>
-    <a class="btn btn-prime d-flex justify-content-center items-center gap-3" @click.prevent="clickaddtocart()"
-        :disabled="loading || props.disabled ? true : undefined">
-        <Spinner v-if="loading" />
+    <button
+        class="btn btn-prime d-flex justify-content-center items-center gap-3"
+        @click.prevent="clickaddtocart()"
+        :disabled="loading || props.disabled ? true : undefined"
+    >
+        <Spinner v-if="loading" size="small" />
         <span>Add To Cart </span>
-    </a>
+    </button>
 </template>
 
 <script setup>
@@ -74,5 +77,6 @@ async function AddToCart() {
 .btn-prime {
     padding-block: 10px;
     transition: all 0.3s ease;
+    width: 100%;
 }
 </style>

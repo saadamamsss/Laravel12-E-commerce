@@ -6,6 +6,7 @@ use App\Models\Menu;
 use App\Models\Notification;
 use Auth;
 use DB;
+use Inertia\Inertia;
 
 
 class SharedServices
@@ -30,7 +31,6 @@ class SharedServices
 
         Notification::where("userId" , Auth::user()->id)->where("read")->get();
     }
-
 
     public function getCategoryChilds($slug)
     {

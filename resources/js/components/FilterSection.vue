@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { ref, computed, reactive, onMounted, watch } from "vue";
+import { ref, computed, reactive, onMounted, watch} from "vue";
 import { Link, router, usePage } from "@inertiajs/vue3";
 import FilterList from "./FilterList.vue";
 

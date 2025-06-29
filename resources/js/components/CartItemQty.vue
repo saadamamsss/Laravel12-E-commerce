@@ -1,20 +1,20 @@
 <template>
     <div class="quantity-input d-flex align-items-center py-1 px-2">
         <div class="d-flex gap-2">
-            <a
+            <button
                 class="btn btn-reduce m-0"
-                :disabled="loader ? true : undefined"
+                :disabled="loader || quantity == 1"
                 @click.prevent="UpdateCart(quantity - 1)"
-            ></a>
-            <a
+            ></button>
+            <button
                 class="btn btn-increase m-0"
-                :disabled="loader ? true : undefined"
+                :disabled="loader || maxQty == quantity"
                 @click.prevent="UpdateCart(quantity + 1)"
-            ></a>
+            ></button>
         </div>
 
         <div style="flex: 1" class="d-flex justify-content-center">
-            <Spinner v-if="loader" />
+            <Spinner v-if="loader" size="small" />
             <span v-else>
                 {{ quantity }}
             </span>

@@ -31,6 +31,6 @@
         "@vue/server-renderer": "^3.5.13",
         "jquery": "^3.7.1",
         "pinia": "^3.0.2",
-        "ziggy-js": "^2.5.2"
+        "ziggy-js": "^2.5.3"
     }
 }

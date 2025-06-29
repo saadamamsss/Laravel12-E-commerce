@@ -21,5 +21,8 @@ createServer((page) =>
                 .use(pinia)
                 .use(ZiggyVue);
         },
+        progress: {
+            color: "#ff2832",
+        },
     })
 );

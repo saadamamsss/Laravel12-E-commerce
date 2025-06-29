@@ -33,7 +33,7 @@ class ProductController extends Controller
     /**
      * Route handler for different page types
      */
-    public function index($slug)
+    public function index(Request $request, $slug)
     {
         $page = DB::table('pages')
             ->where("slug", $slug)
@@ -48,7 +48,6 @@ class ProductController extends Controller
             default => abort(404)
         };
     }
-
     /**
      * Shop view methods with more descriptive names
      */
@@ -168,7 +167,7 @@ class ProductController extends Controller
      */
     protected function getFilteredProducts($query)
     {
-        
+
         return $this->applyFilters($query)
             ->select(self::PRODUCT_LIST_FIELDS)
             ->paginate(15);
@@ -256,10 +255,10 @@ class ProductController extends Controller
         $product = Product::with('variants')
             ->select(["id", "name", "slug", "price", "SKU", "quantity", "images", "variantType"])
             ->findOrFail($request->input("id"));
-        
+
         $product->variants->makeHidden(['productId', 'createdAt', 'updatedAt']);
         $product->variants->each(function ($variant) {
-            $variant->setRawAttributes(collect($variant)->filter()->all()); 
+            $variant->setRawAttributes(collect($variant)->filter()->all());
         });
 
 
@@ -277,10 +276,10 @@ class ProductController extends Controller
             ->where('slug', $slug)
             ->firstOrFail();
 
-            $product->variants->makeHidden(['productId', 'createdAt', 'updatedAt']);
-            $product->variants->each(function ($variant) {
-                $variant->setRawAttributes(collect($variant)->filter()->all()); 
-            });
+        $product->variants->makeHidden(['productId', 'createdAt', 'updatedAt']);
+        $product->variants->each(function ($variant) {
+            $variant->setRawAttributes(collect($variant)->filter()->all());
+        });
 
 
         return Inertia::render("ProductDetails", ['product' => $product]);
@@ -288,7 +287,8 @@ class ProductController extends Controller
 
 
 
-    public function recommendedProducts(){
+    public function recommendedProducts()
+    {
         $recommendedProducts = Product::inRandomOrder()->take(5)->select("id", "name", "price", "images", "slug", 'categoryId')->with([
             "category" => function ($q) {
                 $q->select('id', 'name', "slug")->get();

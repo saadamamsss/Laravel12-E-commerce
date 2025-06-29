@@ -2,6 +2,9 @@ import { defineConfig } from "vite";
 import laravel from "laravel-vite-plugin";
 import vue from "@vitejs/plugin-vue";
 import purgeCss from "vite-plugin-purgecss";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
+
 export default defineConfig({
     plugins: [
         laravel({
@@ -16,9 +19,11 @@ export default defineConfig({
                 "resources/css/color-01.css",
             ],
 
+            postcss: [tailwindcss(), autoprefixer()],
             ssr: "resources/js/ssr.js",
             refresh: true,
         }),
+   
         vue({
             template: {
                 transformAssetUrls: {
@@ -27,8 +32,6 @@ export default defineConfig({
                 },
             },
         }),
-
-  
     ],
     optimizeDeps: {
         include: ["pusher-js", "laravel-echo"],

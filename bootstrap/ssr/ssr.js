@@ -1230,11 +1230,11 @@ const _sfc_main$Q = {
     const formData = ref(props.address ?? initialData);
     return (_ctx, _push, _parent, _attrs) => {
       var _a;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "border-2 border-[#ff2832] rounded-lg p-6 bg-white shadow-md" }, _attrs))} data-v-42a6ff9b><h3 class="text-lg font-medium text-[#444444] mb-4" data-v-42a6ff9b>${ssrInterpolate(((_a = __props.address) == null ? void 0 : _a.id) ? "Edit Address" : "Add New Address")}</h3><form data-v-42a6ff9b><div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-v-42a6ff9b><div class="md:col-span-2" data-v-42a6ff9b><label for="name" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>Full Name *</label><input id="name"${ssrRenderAttr("value", formData.value.name)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div data-v-42a6ff9b><label for="phone" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>Phone Number *</label><input id="phone"${ssrRenderAttr("value", formData.value.phone)} type="tel" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div class="md:col-span-2" data-v-42a6ff9b><label for="address_1" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>address_1 Address *</label><input id="address_1"${ssrRenderAttr("value", formData.value.address_1)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div class="md:col-span-2" data-v-42a6ff9b><label for="address_2" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>Apartment, Suite, etc. (Optional)</label><input id="address_2"${ssrRenderAttr("value", formData.value.address_2)} type="text" class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div data-v-42a6ff9b><label for="city" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>City *</label><input id="city"${ssrRenderAttr("value", formData.value.city)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div data-v-42a6ff9b><label for="province" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>province/Province *</label><input id="province"${ssrRenderAttr("value", formData.value.province)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div data-v-42a6ff9b><label for="zipCode" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>zipCode/Postal Code *</label><input id="zipCode"${ssrRenderAttr("value", formData.value.zipCode)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b></div><div data-v-42a6ff9b><label for="country" class="block text-sm font-medium text-[#444444] mb-1" data-v-42a6ff9b>Country *</label><select id="country" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b><option value="" data-v-42a6ff9b${ssrIncludeBooleanAttr(Array.isArray(formData.value.country) ? ssrLooseContain(formData.value.country, "") : ssrLooseEqual(formData.value.country, "")) ? " selected" : ""}>Select Country</option><!--[-->`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "border-2 border-[#ff2832] rounded-lg p-6 bg-white shadow-md" }, _attrs))} data-v-22c41f32><h3 class="text-lg font-medium text-[#444444] mb-4" data-v-22c41f32>${ssrInterpolate(((_a = __props.address) == null ? void 0 : _a.id) ? "Edit Address" : "Add New Address")}</h3><form data-v-22c41f32><div class="grid grid-cols-1 md:grid-cols-2 gap-4" data-v-22c41f32><div class="md:col-span-2" data-v-22c41f32><label for="name" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>Full Name *</label><input id="name"${ssrRenderAttr("value", formData.value.name)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div data-v-22c41f32><label for="phone" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>Phone Number *</label><input id="phone"${ssrRenderAttr("value", formData.value.phone)} type="tel" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div class="md:col-span-2" data-v-22c41f32><label for="address_1" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>address_1 Address *</label><input id="address_1"${ssrRenderAttr("value", formData.value.address_1)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div class="md:col-span-2" data-v-22c41f32><label for="address_2" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>Apartment, Suite, etc. (Optional)</label><input id="address_2"${ssrRenderAttr("value", formData.value.address_2)} type="text" class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div data-v-22c41f32><label for="city" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>City *</label><input id="city"${ssrRenderAttr("value", formData.value.city)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div data-v-22c41f32><label for="province" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>province/Province *</label><input id="province"${ssrRenderAttr("value", formData.value.province)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div data-v-22c41f32><label for="zipCode" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>zipCode/Postal Code *</label><input id="zipCode"${ssrRenderAttr("value", formData.value.zipCode)} type="text" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32></div><div data-v-22c41f32><label for="country" class="block text-sm font-medium text-[#444444] mb-1" data-v-22c41f32>Country *</label><select id="country" required class="block w-full px-3 py-2 border border-[#e6e3de] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-22c41f32><option value="" data-v-22c41f32${ssrIncludeBooleanAttr(Array.isArray(formData.value.country) ? ssrLooseContain(formData.value.country, "") : ssrLooseEqual(formData.value.country, "")) ? " selected" : ""}>Select Country</option><!--[-->`);
       ssrRenderList(countries.value, (country) => {
-        _push(`<option${ssrRenderAttr("value", country)} data-v-42a6ff9b${ssrIncludeBooleanAttr(Array.isArray(formData.value.country) ? ssrLooseContain(formData.value.country, country) : ssrLooseEqual(formData.value.country, country)) ? " selected" : ""}>${ssrInterpolate(country)}</option>`);
+        _push(`<option${ssrRenderAttr("value", country)} data-v-22c41f32${ssrIncludeBooleanAttr(Array.isArray(formData.value.country) ? ssrLooseContain(formData.value.country, country) : ssrLooseEqual(formData.value.country, country)) ? " selected" : ""}>${ssrInterpolate(country)}</option>`);
       });
-      _push(`<!--]--></select></div><div class="md:col-span-2 flex items-center" data-v-42a6ff9b><input id="default"${ssrIncludeBooleanAttr(Array.isArray(formData.value.is_default) ? ssrLooseContain(formData.value.is_default, null) : formData.value.is_default) ? " checked" : ""} type="checkbox" class="h-4 w-4 text-[#ff2832] border-[#e6e3de] rounded focus:ring-[#ff2832]/50" data-v-42a6ff9b><label for="default" class="ml-2 block text-sm text-[#444444]" data-v-42a6ff9b> Set as default address </label></div></div><div class="mt-6 flex justify-end space-x-3" data-v-42a6ff9b><button type="button" class="px-4 py-2 border border-[#e6e3de] rounded-md shadow-sm text-sm font-medium text-[#444444] hover:bg-[#e6e3de]/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-42a6ff9b> Cancel </button><button type="submit" class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200"${ssrIncludeBooleanAttr(formData.value.processing) ? " disabled" : ""} data-v-42a6ff9b>${ssrInterpolate(formData.value.processing ? "Saving..." : "Save Address")}</button></div></form></div>`);
+      _push(`<!--]--></select></div><div class="md:col-span-2 flex items-center" data-v-22c41f32><input id="default"${ssrIncludeBooleanAttr(Array.isArray(formData.value.is_default) ? ssrLooseContain(formData.value.is_default, null) : formData.value.is_default) ? " checked" : ""} type="checkbox" class="h-4 w-4 text-[#ff2832] border-[#e6e3de] rounded focus:ring-[#ff2832]/50" data-v-22c41f32><label for="default" class="ml-2 block text-sm text-[#444444]" data-v-22c41f32> Set as default address </label></div></div><div class="mt-6 flex justify-end space-x-3" data-v-22c41f32><button type="button" class="px-4 py-2 border border-[#e6e3de] rounded-md shadow-sm text-sm font-medium text-[#444444] hover:bg-[#e6e3de]/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-22c41f32> Cancel </button><button type="submit" class="px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200"${ssrIncludeBooleanAttr(formData.value.processing) ? " disabled" : ""} data-v-22c41f32>${ssrInterpolate(formData.value.processing ? "Saving..." : "Save Address")}</button></div></form></div>`);
     };
   }
 };
@@ -1244,7 +1244,7 @@ _sfc_main$Q.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/AddressEditForm.vue");
   return _sfc_setup$Q ? _sfc_setup$Q(props, ctx) : void 0;
 };
-const AddressEditForm = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-42a6ff9b"]]);
+const AddressEditForm = /* @__PURE__ */ _export_sfc(_sfc_main$Q, [["__scopeId", "data-v-22c41f32"]]);
 const _sfc_main$P = {
   __name: "AuthenticatedLayout",
   __ssrInlineRender: true,
@@ -1353,7 +1353,7 @@ const _sfc_main$O = {
     const showAddForm = ref(false);
     const setDefaultAddress = async (id) => {
       try {
-        const { data } = await API.patch("set-address-default", id);
+        const { data } = await API.post("set-address-default", id);
         if (data.success) {
           resetDefaultAddress(id);
           changeDefaultAddress(id);
@@ -1401,28 +1401,28 @@ const _sfc_main$O = {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
             if (!showAddForm.value && !editingAddress.value) {
-              _push2(`<div class="bg-white shadow-md rounded-lg border px-3 py-3 flex justify-end" data-v-f2164e12${_scopeId}><button class="bg-[#ff2832]/90 px-4 py-2 rounded-lg text-white hover:bg-[#ff2832]/80" data-v-f2164e12${_scopeId}>Add New Address</button></div>`);
+              _push2(`<div class="bg-white shadow-md rounded-lg border px-3 py-3 flex justify-end" data-v-858b84f3${_scopeId}><button class="bg-[#ff2832]/90 px-4 py-2 rounded-lg text-white hover:bg-[#ff2832]/80" data-v-858b84f3${_scopeId}>Add New Address</button></div>`);
             } else {
               _push2(`<!---->`);
             }
             if (!showAddForm.value && !editingAddress.value) {
               _push2(`<!--[-->`);
               ssrRenderList(addresses.value, (address) => {
-                _push2(`<div class="${ssrRenderClass([address.is_default ? "ring-1 ring-[#ff2832]" : "hover:ring-1 hover:ring-[#ff2832]/80", "rounded-lg p-6 bg-white transition-shadow duration-200"])}" data-v-f2164e12${_scopeId}><div class="flex justify-between items-start" data-v-f2164e12${_scopeId}><div data-v-f2164e12${_scopeId}><h3 class="font-medium text-[#444444]" data-v-f2164e12${_scopeId}>${ssrInterpolate(address.name)}</h3><p class="text-sm text-[#444444]/80 mt-1" data-v-f2164e12${_scopeId}>${ssrInterpolate(address.phone)}</p></div><div class="flex space-x-2" data-v-f2164e12${_scopeId}>`);
+                _push2(`<div class="${ssrRenderClass([address.is_default ? "ring-1 ring-[#ff2832]" : "hover:ring-1 hover:ring-[#ff2832]/80", "rounded-lg p-6 bg-white transition-shadow duration-200"])}" data-v-858b84f3${_scopeId}><div class="flex justify-between items-start" data-v-858b84f3${_scopeId}><div data-v-858b84f3${_scopeId}><h3 class="font-medium text-[#444444]" data-v-858b84f3${_scopeId}>${ssrInterpolate(address.name)}</h3><p class="text-sm text-[#444444]/80 mt-1" data-v-858b84f3${_scopeId}>${ssrInterpolate(address.phone)}</p></div><div class="flex space-x-2" data-v-858b84f3${_scopeId}>`);
                 if (address.is_default) {
-                  _push2(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#ff2832]/10 text-[#ff2832]" data-v-f2164e12${_scopeId}> Default </span>`);
+                  _push2(`<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#ff2832]/10 text-[#ff2832]" data-v-858b84f3${_scopeId}> Default </span>`);
                 } else {
                   _push2(`<!---->`);
                 }
-                _push2(`<button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-f2164e12${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-f2164e12${_scopeId}><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" data-v-f2164e12${_scopeId}></path></svg></button><button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-f2164e12${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-f2164e12${_scopeId}><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" data-v-f2164e12${_scopeId}></path></svg></button></div></div><div class="mt-4 text-sm text-[#444444]" data-v-f2164e12${_scopeId}><p data-v-f2164e12${_scopeId}>${ssrInterpolate(address.address_1)}</p>`);
+                _push2(`<button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-858b84f3${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-858b84f3${_scopeId}><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" data-v-858b84f3${_scopeId}></path></svg></button><button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-858b84f3${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-858b84f3${_scopeId}><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd" data-v-858b84f3${_scopeId}></path></svg></button></div></div><div class="mt-4 text-sm text-[#444444]" data-v-858b84f3${_scopeId}><p data-v-858b84f3${_scopeId}>${ssrInterpolate(address.address_1)}</p>`);
                 if (address.address_2) {
-                  _push2(`<p data-v-f2164e12${_scopeId}>${ssrInterpolate(address.address_2)}</p>`);
+                  _push2(`<p data-v-858b84f3${_scopeId}>${ssrInterpolate(address.address_2)}</p>`);
                 } else {
                   _push2(`<!---->`);
                 }
-                _push2(`<p data-v-f2164e12${_scopeId}>${ssrInterpolate(address.city)}, ${ssrInterpolate(address.province)} ${ssrInterpolate(address.zipCode)}</p><p data-v-f2164e12${_scopeId}>${ssrInterpolate(address.country)}</p></div>`);
+                _push2(`<p data-v-858b84f3${_scopeId}>${ssrInterpolate(address.city)}, ${ssrInterpolate(address.province)} ${ssrInterpolate(address.zipCode)}</p><p data-v-858b84f3${_scopeId}>${ssrInterpolate(address.country)}</p></div>`);
                 if (!address.is_default) {
-                  _push2(`<div class="mt-4" data-v-f2164e12${_scopeId}><button class="text-sm font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-f2164e12${_scopeId}> Set as default </button></div>`);
+                  _push2(`<div class="mt-4" data-v-858b84f3${_scopeId}><button class="text-sm font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-858b84f3${_scopeId}> Set as default </button></div>`);
                 } else {
                   _push2(`<!---->`);
                 }
@@ -1548,7 +1548,7 @@ _sfc_main$O.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Address.vue");
   return _sfc_setup$O ? _sfc_setup$O(props, ctx) : void 0;
 };
-const Address = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["__scopeId", "data-v-f2164e12"]]);
+const Address = /* @__PURE__ */ _export_sfc(_sfc_main$O, [["__scopeId", "data-v-858b84f3"]]);
 const __vite_glob_0_1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Address
@@ -2147,14 +2147,14 @@ const _sfc_main$B = {
     }
     return (_ctx, _push, _parent, _attrs) => {
       var _a;
-      _push(`<figure${ssrRenderAttrs(mergeProps({ class: "relative flex" }, _attrs))} data-v-642dfc70>`);
+      _push(`<figure${ssrRenderAttrs(mergeProps({ class: "relative flex" }, _attrs))} data-v-70cd37f9>`);
       if (__props.source) {
-        _push(`<img${ssrRenderAttr("data-src", __props.source)} class="${ssrRenderClass({ "loaded": loaded.value })}"${ssrRenderAttr("alt", __props.alt)} data-v-642dfc70>`);
+        _push(`<img${ssrRenderAttr("data-src", __props.source)} class="${ssrRenderClass({ "loaded": loaded.value })}"${ssrRenderAttr("alt", __props.alt)} data-v-70cd37f9>`);
       } else {
         _push(`<!---->`);
       }
       if (!loaded.value && ((_a = imageref.value) == null ? void 0 : _a.src) == "") {
-        _push(`<div class="image-placeholder" data-v-642dfc70></div>`);
+        _push(`<div class="image-placeholder" data-v-70cd37f9></div>`);
       } else {
         _push(`<!---->`);
       }
@@ -2168,7 +2168,7 @@ _sfc_main$B.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ImageComponent.vue");
   return _sfc_setup$B ? _sfc_setup$B(props, ctx) : void 0;
 };
-const ImageComponent = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["__scopeId", "data-v-642dfc70"]]);
+const ImageComponent = /* @__PURE__ */ _export_sfc(_sfc_main$B, [["__scopeId", "data-v-70cd37f9"]]);
 const _sfc_main$A = {
   __name: "SlideShow",
   __ssrInlineRender: true,
@@ -2177,37 +2177,37 @@ const _sfc_main$A = {
     const props = __props;
     const slides = ref(props.content);
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "wrap-main-slide" }, _attrs))} data-v-6dfb381a><div class="slide-carousel owl-carousel d-flex style-nav-1 slideShow" data-items="1" data-loop="1" data-nav="true" data-dots="false" data-v-6dfb381a><!--[-->`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "wrap-main-slide" }, _attrs))} data-v-c1838139><div class="slide-carousel owl-carousel d-flex style-nav-1 slideShow" data-items="1" data-loop="1" data-nav="true" data-dots="false" data-v-c1838139><!--[-->`);
       ssrRenderList(slides.value, (slide, index) => {
-        _push(`<div class="item-slide position-relative slides" data-v-6dfb381a>`);
+        _push(`<div class="item-slide position-relative slides" data-v-c1838139>`);
         _push(ssrRenderComponent(ImageComponent, {
           source: `assets/images/${slide.image}`,
           alt: slide.title,
           class: "img-slide"
         }, null, _parent));
-        _push(`<div class="${ssrRenderClass(["slide-info", slide.slideClass])}" data-v-6dfb381a><h2 class="f-title" data-v-6dfb381a>${slide.title ?? ""}</h2>`);
+        _push(`<div class="${ssrRenderClass(["slide-info", slide.slideClass])}" data-v-c1838139><h2 class="f-title" data-v-c1838139>${slide.title ?? ""}</h2>`);
         if (slide.subtitle) {
-          _push(`<span class="subtitle" data-v-6dfb381a>${ssrInterpolate(slide.subtitle)}</span>`);
+          _push(`<span class="subtitle" data-v-c1838139>${ssrInterpolate(slide.subtitle)}</span>`);
         } else {
           _push(`<!---->`);
         }
         if (slide.price) {
-          _push(`<p class="sale-info" data-v-6dfb381a>${ssrInterpolate(slide.priceLabel || "Only price:")} <span class="price" data-v-6dfb381a>${ssrInterpolate(slide.price)}</span></p>`);
+          _push(`<p class="sale-info" data-v-c1838139>${ssrInterpolate(slide.priceLabel || "Only price:")} <span class="price" data-v-c1838139>${ssrInterpolate(slide.price)}</span></p>`);
         } else {
           _push(`<!---->`);
         }
         if (slide.discountCode) {
-          _push(`<p class="discount-code" data-v-6dfb381a>${ssrInterpolate(slide.discountCode)}</p>`);
+          _push(`<p class="discount-code" data-v-c1838139>${ssrInterpolate(slide.discountCode)}</p>`);
         } else {
           _push(`<!---->`);
         }
         if (slide.freeTitle) {
-          _push(`<!--[--><h4 class="s-title" data-v-6dfb381a>${ssrInterpolate(slide.freeTitle)}</h4><p class="s-subtitle" data-v-6dfb381a>${ssrInterpolate(slide.freeSubtitle)}</p><!--]-->`);
+          _push(`<!--[--><h4 class="s-title" data-v-c1838139>${ssrInterpolate(slide.freeTitle)}</h4><p class="s-subtitle" data-v-c1838139>${ssrInterpolate(slide.freeSubtitle)}</p><!--]-->`);
         } else {
           _push(`<!---->`);
         }
         if (slide.cta) {
-          _push(`<a href="#" class="btn-link" data-v-6dfb381a>${ssrInterpolate(slide.cta)}</a>`);
+          _push(`<a href="#" class="btn-link" data-v-c1838139>${ssrInterpolate(slide.cta)}</a>`);
         } else {
           _push(`<!---->`);
         }
@@ -2223,7 +2223,7 @@ _sfc_main$A.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/SlideShow.vue");
   return _sfc_setup$A ? _sfc_setup$A(props, ctx) : void 0;
 };
-const SlideShow = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["__scopeId", "data-v-6dfb381a"]]);
+const SlideShow = /* @__PURE__ */ _export_sfc(_sfc_main$A, [["__scopeId", "data-v-c1838139"]]);
 const _sfc_main$z = {
   name: "ProductSection",
   components: { ImageComponent },
@@ -2514,7 +2514,7 @@ function _sfc_ssrRender$2(_ctx, _push, _parent, _attrs) {
   _push(`<div${ssrRenderAttrs(mergeProps({
     class: "spinner-border",
     role: "status"
-  }, _attrs))} data-v-99f40713><span class="sr-only" data-v-99f40713></span></div>`);
+  }, _attrs))} data-v-c4edcb3d><span class="sr-only" data-v-c4edcb3d></span></div>`);
 }
 const _sfc_setup$t = _sfc_main$t.setup;
 _sfc_main$t.setup = (props, ctx) => {
@@ -2522,7 +2522,7 @@ _sfc_main$t.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/Spinner.vue");
   return _sfc_setup$t ? _sfc_setup$t(props, ctx) : void 0;
 };
-const Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-99f40713"]]);
+const Spinner = /* @__PURE__ */ _export_sfc(_sfc_main$t, [["ssrRender", _sfc_ssrRender$2], ["__scopeId", "data-v-c4edcb3d"]]);
 const _sfc_main$s = {
   __name: "CartItemQty",
   __ssrInlineRender: true,
@@ -3748,9 +3748,9 @@ const _sfc_main$l = {
       _push(ssrRenderComponent(AuthenticatedLayout, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<div class="bg-white rounded-xl shadow-sm p-6" data-v-1e40b98b${_scopeId}><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-v-1e40b98b${_scopeId}><div class="flex-1" data-v-1e40b98b${_scopeId}><label for="search" class="sr-only" data-v-1e40b98b${_scopeId}>Search orders</label><div class="relative" data-v-1e40b98b${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-1e40b98b${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-1e40b98b${_scopeId}><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" data-v-1e40b98b${_scopeId}></path></svg></div><input id="search"${ssrRenderAttr("value", searchQuery.value)} type="text" placeholder="Search orders..." class="pl-10 block w-full pr-3 py-2 border border-[#e6e3de] rounded-md shadow-sm placeholder-[#444444]/40 focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-1e40b98b${_scopeId}></div></div><div class="flex-shrink-0" data-v-1e40b98b${_scopeId}><select class="block w-full pl-3 pr-10 py-2 text-base border border-[#e6e3de] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-1e40b98b${_scopeId}><option value="all" data-v-1e40b98b${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "all") : ssrLooseEqual(statusFilter.value, "all")) ? " selected" : ""}${_scopeId}>All Statuses</option><option value="processing" data-v-1e40b98b${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "processing") : ssrLooseEqual(statusFilter.value, "processing")) ? " selected" : ""}${_scopeId}>Processing</option><option value="shipped" data-v-1e40b98b${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "shipped") : ssrLooseEqual(statusFilter.value, "shipped")) ? " selected" : ""}${_scopeId}>Shipped</option><option value="delivered" data-v-1e40b98b${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "delivered") : ssrLooseEqual(statusFilter.value, "delivered")) ? " selected" : ""}${_scopeId}>Delivered</option><option value="cancelled" data-v-1e40b98b${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "cancelled") : ssrLooseEqual(statusFilter.value, "cancelled")) ? " selected" : ""}${_scopeId}>Cancelled</option></select></div></div></div><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-1e40b98b${_scopeId}><div class="hidden md:grid grid-cols-12 gap-4 px-6 py-4 bg-[#f8f8f8] border-b border-[#e6e3de] text-sm font-medium text-[#444444]/80" data-v-1e40b98b${_scopeId}><div class="col-span-3" data-v-1e40b98b${_scopeId}>Order</div><div class="col-span-3" data-v-1e40b98b${_scopeId}>Date</div><div class="col-span-2" data-v-1e40b98b${_scopeId}>Total</div><div class="col-span-2" data-v-1e40b98b${_scopeId}>Status</div><div class="col-span-2" data-v-1e40b98b${_scopeId}>Actions</div></div><div class="divide-y divide-[#e6e3de]" data-v-1e40b98b${_scopeId}><!--[-->`);
+            _push2(`<div class="bg-white rounded-xl shadow-sm p-6" data-v-fc195e38${_scopeId}><div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4" data-v-fc195e38${_scopeId}><div class="flex-1" data-v-fc195e38${_scopeId}><label for="search" class="sr-only" data-v-fc195e38${_scopeId}>Search orders</label><div class="relative" data-v-fc195e38${_scopeId}><div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none" data-v-fc195e38${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#444444]/50" viewBox="0 0 20 20" fill="currentColor" data-v-fc195e38${_scopeId}><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" data-v-fc195e38${_scopeId}></path></svg></div><input id="search"${ssrRenderAttr("value", searchQuery.value)} type="text" placeholder="Search orders..." class="pl-10 block w-full pr-3 py-2 border border-[#e6e3de] rounded-md shadow-sm placeholder-[#444444]/40 focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-fc195e38${_scopeId}></div></div><div class="flex-shrink-0" data-v-fc195e38${_scopeId}><select class="block w-full pl-3 pr-10 py-2 text-base border border-[#e6e3de] rounded-md focus:outline-none focus:ring-2 focus:ring-[#ff2832]/50 focus:border-[#ff2832]/50 transition-all duration-200" data-v-fc195e38${_scopeId}><option value="all" data-v-fc195e38${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "all") : ssrLooseEqual(statusFilter.value, "all")) ? " selected" : ""}${_scopeId}>All Statuses</option><option value="processing" data-v-fc195e38${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "processing") : ssrLooseEqual(statusFilter.value, "processing")) ? " selected" : ""}${_scopeId}>Processing</option><option value="shipped" data-v-fc195e38${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "shipped") : ssrLooseEqual(statusFilter.value, "shipped")) ? " selected" : ""}${_scopeId}>Shipped</option><option value="delivered" data-v-fc195e38${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "delivered") : ssrLooseEqual(statusFilter.value, "delivered")) ? " selected" : ""}${_scopeId}>Delivered</option><option value="cancelled" data-v-fc195e38${ssrIncludeBooleanAttr(Array.isArray(statusFilter.value) ? ssrLooseContain(statusFilter.value, "cancelled") : ssrLooseEqual(statusFilter.value, "cancelled")) ? " selected" : ""}${_scopeId}>Cancelled</option></select></div></div></div><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-fc195e38${_scopeId}><div class="hidden md:grid grid-cols-12 gap-4 px-6 py-4 bg-[#f8f8f8] border-b border-[#e6e3de] text-sm font-medium text-[#444444]/80" data-v-fc195e38${_scopeId}><div class="col-span-3" data-v-fc195e38${_scopeId}>Order</div><div class="col-span-3" data-v-fc195e38${_scopeId}>Date</div><div class="col-span-2" data-v-fc195e38${_scopeId}>Total</div><div class="col-span-2" data-v-fc195e38${_scopeId}>Status</div><div class="col-span-2" data-v-fc195e38${_scopeId}>Actions</div></div><div class="divide-y divide-[#e6e3de]" data-v-fc195e38${_scopeId}><!--[-->`);
             ssrRenderList(filteredOrders.value, (order) => {
-              _push2(`<div class="p-6 hover:bg-[#f8f8f8] transition-colors duration-150" data-v-1e40b98b${_scopeId}><div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center" data-v-1e40b98b${_scopeId}><div class="md:hidden flex justify-between items-center" data-v-1e40b98b${_scopeId}><span class="text-sm text-[#444444]/60" data-v-1e40b98b${_scopeId}>Order</span><span class="font-medium text-[#444444]" data-v-1e40b98b${_scopeId}>#${ssrInterpolate(order.id)}</span></div><div class="hidden md:block col-span-3" data-v-1e40b98b${_scopeId}><p class="mb-0 font-medium text-[#444444]" data-v-1e40b98b${_scopeId}>#${ssrInterpolate(order.id)}</p><p class="mb-0 text-sm text-[#444444]/60 mt-1" data-v-1e40b98b${_scopeId}>${ssrInterpolate(order.items_count)} items</p></div><div class="md:col-span-3" data-v-1e40b98b${_scopeId}><div class="md:hidden flex justify-between items-center" data-v-1e40b98b${_scopeId}><span class="text-sm text-[#444444]/60" data-v-1e40b98b${_scopeId}>Date</span><span class="text-[#444444]" data-v-1e40b98b${_scopeId}>${ssrInterpolate(new Date(order.created_at).toDateString())}</span></div><div class="hidden md:block" data-v-1e40b98b${_scopeId}><p class="mb-0 text-[#444444]" data-v-1e40b98b${_scopeId}>${ssrInterpolate(new Date(order.created_at).toDateString())}</p></div></div><div class="md:col-span-2" data-v-1e40b98b${_scopeId}><div class="md:hidden flex items-center" data-v-1e40b98b${_scopeId}><span class="text-sm text-[#444444]/60" data-v-1e40b98b${_scopeId}>Total</span><span class="font-medium text-[#444444]" data-v-1e40b98b${_scopeId}>${ssrInterpolate(order.total)}</span></div><div class="hidden md:block md:text-left" data-v-1e40b98b${_scopeId}><p class="mb-0 font-medium text-[#444444]" data-v-1e40b98b${_scopeId}>${ssrInterpolate(order.total)}</p></div></div><div class="md:col-span-2" data-v-1e40b98b${_scopeId}><div class="flex justify-end md:justify-start" data-v-1e40b98b${_scopeId}><span class="${ssrRenderClass([statusClasses(order.status), "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium"])}" data-v-1e40b98b${_scopeId}>${ssrInterpolate(order.status)}</span></div></div><div class="md:col-span-2" data-v-1e40b98b${_scopeId}><div class="flex" data-v-1e40b98b${_scopeId}>`);
+              _push2(`<div class="p-6 hover:bg-[#f8f8f8] transition-colors duration-150" data-v-fc195e38${_scopeId}><div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center" data-v-fc195e38${_scopeId}><div class="md:hidden flex justify-between items-center" data-v-fc195e38${_scopeId}><span class="text-sm text-[#444444]/60" data-v-fc195e38${_scopeId}>Order</span><span class="font-medium text-[#444444]" data-v-fc195e38${_scopeId}>#${ssrInterpolate(order.id)}</span></div><div class="hidden md:block col-span-3" data-v-fc195e38${_scopeId}><p class="mb-0 font-medium text-[#444444]" data-v-fc195e38${_scopeId}>#${ssrInterpolate(order.id)}</p><p class="mb-0 text-sm text-[#444444]/60 mt-1" data-v-fc195e38${_scopeId}>${ssrInterpolate(order.items_count)} items</p></div><div class="md:col-span-3" data-v-fc195e38${_scopeId}><div class="md:hidden flex justify-between items-center" data-v-fc195e38${_scopeId}><span class="text-sm text-[#444444]/60" data-v-fc195e38${_scopeId}>Date</span><span class="text-[#444444]" data-v-fc195e38${_scopeId}>${ssrInterpolate(new Date(order.created_at).toDateString())}</span></div><div class="hidden md:block" data-v-fc195e38${_scopeId}><p class="mb-0 text-[#444444]" data-v-fc195e38${_scopeId}>${ssrInterpolate(new Date(order.created_at).toDateString())}</p></div></div><div class="md:col-span-2" data-v-fc195e38${_scopeId}><div class="md:hidden flex items-center" data-v-fc195e38${_scopeId}><span class="text-sm text-[#444444]/60" data-v-fc195e38${_scopeId}>Total</span><span class="font-medium text-[#444444]" data-v-fc195e38${_scopeId}>${ssrInterpolate(order.total)}</span></div><div class="hidden md:block md:text-left" data-v-fc195e38${_scopeId}><p class="mb-0 font-medium text-[#444444]" data-v-fc195e38${_scopeId}>${ssrInterpolate(order.total)}</p></div></div><div class="md:col-span-2" data-v-fc195e38${_scopeId}><div class="flex justify-end md:justify-start" data-v-fc195e38${_scopeId}><span class="${ssrRenderClass([statusClasses(order.status), "inline-flex items-center px-3 py-1 rounded-full text-sm font-medium"])}" data-v-fc195e38${_scopeId}>${ssrInterpolate(order.status)}</span></div></div><div class="md:col-span-2" data-v-fc195e38${_scopeId}><div class="flex" data-v-fc195e38${_scopeId}>`);
               _push2(ssrRenderComponent(unref(Link), {
                 href: `orders/${order.id}`,
                 class: "text-nowrap text-sm font-medium text-[#fff] bg-[#ff2832]/90 px-3 py-2 rounded-md cursor-pointer hover:bg-[#ff2832]/80 transition-colors duration-200 flex items-center"
@@ -3768,12 +3768,12 @@ const _sfc_main$l = {
               }, _parent2, _scopeId));
               _push2(`</div></div></div></div>`);
             });
-            _push2(`<!--]--></div><div class="px-6 py-4 border-t border-[#e6e3de] flex items-center justify-between" data-v-1e40b98b${_scopeId}><div class="sm:flex-1 sm:flex sm:items-center sm:justify-between" data-v-1e40b98b${_scopeId}><div data-v-1e40b98b${_scopeId}><p class="mb-0 text-sm text-[#444444]" data-v-1e40b98b${_scopeId}> Showing <span class="font-medium" data-v-1e40b98b${_scopeId}>${ssrInterpolate(paginate.value.current_page)}</span> to <span class="font-medium" data-v-1e40b98b${_scopeId}>${ssrInterpolate(paginate.value.links.length - 2)}</span> of <span class="font-medium" data-v-1e40b98b${_scopeId}>${ssrInterpolate(paginate.value.total)}</span> results </p></div><div data-v-1e40b98b${_scopeId}><nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination" data-v-1e40b98b${_scopeId}><!--[-->`);
+            _push2(`<!--]--></div><div class="px-6 py-4 border-t border-[#e6e3de] flex items-center justify-between" data-v-fc195e38${_scopeId}><div class="sm:flex-1 sm:flex sm:items-center sm:justify-between" data-v-fc195e38${_scopeId}><div data-v-fc195e38${_scopeId}><p class="mb-0 text-sm text-[#444444]" data-v-fc195e38${_scopeId}> Showing <span class="font-medium" data-v-fc195e38${_scopeId}>${ssrInterpolate(paginate.value.current_page)}</span> to <span class="font-medium" data-v-fc195e38${_scopeId}>${ssrInterpolate(paginate.value.links.length - 2)}</span> of <span class="font-medium" data-v-fc195e38${_scopeId}>${ssrInterpolate(paginate.value.total)}</span> results </p></div><div data-v-fc195e38${_scopeId}><nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination" data-v-fc195e38${_scopeId}><!--[-->`);
             ssrRenderList(paginate.value.links, (link, index) => {
               _push2(`<button${ssrRenderAttr("aria-current", link.active ? "page" : void 0)} class="${ssrRenderClass([
                 link.active ? "z-10 bg-[#ddd] border-[#ff2832]/50 text-[#ff2832]" : "text-[#444444] hover:bg-[#e6e3de]/30",
                 "relative inline-flex items-center px-4 py-2 border border-[#e6e3de] bg-white text-sm font-medium"
-              ])}" data-v-1e40b98b${_scopeId}>${link.label ?? ""}</button>`);
+              ])}" data-v-fc195e38${_scopeId}>${link.label ?? ""}</button>`);
             });
             _push2(`<!--]--></nav></div></div></div></div>`);
           } else {
@@ -3941,7 +3941,7 @@ _sfc_main$l.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/Order.vue");
   return _sfc_setup$l ? _sfc_setup$l(props, ctx) : void 0;
 };
-const Order = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-1e40b98b"]]);
+const Order = /* @__PURE__ */ _export_sfc(_sfc_main$l, [["__scopeId", "data-v-fc195e38"]]);
 const __vite_glob_0_13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Order
@@ -3957,7 +3957,7 @@ const _sfc_main$k = {
       _push(ssrRenderComponent(_sfc_main$S, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<div class="min-h-screen bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8" data-v-fd21a8cb${_scopeId}><div class="max-w-3xl mx-auto" data-v-fd21a8cb${_scopeId}><div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all duration-300 hover:shadow-lg" data-v-fd21a8cb${_scopeId}><div class="p-8" data-v-fd21a8cb${_scopeId}><div class="flex items-center justify-center mb-6" data-v-fd21a8cb${_scopeId}><div class="rounded-full bg-[#ff2832]/10 p-4" data-v-fd21a8cb${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#ff2832]" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-fd21a8cb${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" data-v-fd21a8cb${_scopeId}></path></svg></div></div><h1 class="text-3xl font-bold text-center text-[#444444] mb-4" data-v-fd21a8cb${_scopeId}>Order Confirmed!</h1><p class="text-center text-[#444444]/80 mb-6" data-v-fd21a8cb${_scopeId}> Thank you for your purchase. Your order <span class="font-semibold text-[#ff2832]" data-v-fd21a8cb${_scopeId}>#${ssrInterpolate(order.value.id)}</span> has been received and is being processed. </p><div class="bg-[#e6e3de]/30 px-4 py-2 rounded-lg border border-[#e6e3de]" data-v-fd21a8cb${_scopeId}><h3 class="font-medium text-[#444444] mb-4" data-v-fd21a8cb${_scopeId}>Order Summary</h3><div class="mb-2 flex justify-between text-sm text-[#444444]/80" data-v-fd21a8cb${_scopeId}><span data-v-fd21a8cb${_scopeId}>Date:</span><span data-v-fd21a8cb${_scopeId}>${ssrInterpolate(new Date(order.value.created_at).toDateString())}</span></div><div class="mb-2 flex justify-between text-sm text-[#444444]/80" data-v-fd21a8cb${_scopeId}><span data-v-fd21a8cb${_scopeId}>Total:</span><span class="font-medium" data-v-fd21a8cb${_scopeId}>$${ssrInterpolate(Number(order.value.total).toFixed(2))}</span></div><div class="mb-3 flex justify-between text-sm text-[#444444]/80" data-v-fd21a8cb${_scopeId}><span data-v-fd21a8cb${_scopeId}>Payment Status:</span><span data-v-fd21a8cb${_scopeId}>(${ssrInterpolate(order.value.paymentStatus)})</span></div></div></div></div><div class="mt-8 flex flex-col sm:flex-row gap-4" data-v-fd21a8cb${_scopeId}>`);
+            _push2(`<div class="min-h-screen bg-[#f5f5f5] py-12 px-4 sm:px-6 lg:px-8" data-v-9ac8f2f6${_scopeId}><div class="max-w-3xl mx-auto" data-v-9ac8f2f6${_scopeId}><div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 transition-all duration-300 hover:shadow-lg" data-v-9ac8f2f6${_scopeId}><div class="p-8" data-v-9ac8f2f6${_scopeId}><div class="flex items-center justify-center mb-6" data-v-9ac8f2f6${_scopeId}><div class="rounded-full bg-[#ff2832]/10 p-4" data-v-9ac8f2f6${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-[#ff2832]" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-9ac8f2f6${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" data-v-9ac8f2f6${_scopeId}></path></svg></div></div><h1 class="text-3xl font-bold text-center text-[#444444] mb-4" data-v-9ac8f2f6${_scopeId}>Order Confirmed!</h1><p class="text-center text-[#444444]/80 mb-6" data-v-9ac8f2f6${_scopeId}> Thank you for your purchase. Your order <span class="font-semibold text-[#ff2832]" data-v-9ac8f2f6${_scopeId}>#${ssrInterpolate(order.value.id)}</span> has been received and is being processed. </p><div class="bg-[#e6e3de]/30 px-4 py-2 rounded-lg border border-[#e6e3de]" data-v-9ac8f2f6${_scopeId}><h3 class="font-medium text-[#444444] mb-4" data-v-9ac8f2f6${_scopeId}>Order Summary</h3><div class="mb-2 flex justify-between text-sm text-[#444444]/80" data-v-9ac8f2f6${_scopeId}><span data-v-9ac8f2f6${_scopeId}>Date:</span><span data-v-9ac8f2f6${_scopeId}>${ssrInterpolate(new Date(order.value.created_at).toDateString())}</span></div><div class="mb-2 flex justify-between text-sm text-[#444444]/80" data-v-9ac8f2f6${_scopeId}><span data-v-9ac8f2f6${_scopeId}>Total:</span><span class="font-medium" data-v-9ac8f2f6${_scopeId}>$${ssrInterpolate(Number(order.value.total).toFixed(2))}</span></div><div class="mb-3 flex justify-between text-sm text-[#444444]/80" data-v-9ac8f2f6${_scopeId}><span data-v-9ac8f2f6${_scopeId}>Payment Status:</span><span data-v-9ac8f2f6${_scopeId}>(${ssrInterpolate(order.value.paymentStatus)})</span></div></div></div></div><div class="mt-8 flex flex-col sm:flex-row gap-4" data-v-9ac8f2f6${_scopeId}>`);
             _push2(ssrRenderComponent(unref(Link), {
               href: "/account/orders",
               class: "flex-1 bg-[#444444] hover:bg-[#ddd] text-white hover:text-black py-3 px-4 text-center font-medium transition-colors duration-200"
@@ -4072,7 +4072,7 @@ _sfc_main$k.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/OrderConfirmation.vue");
   return _sfc_setup$k ? _sfc_setup$k(props, ctx) : void 0;
 };
-const OrderConfirmation = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-fd21a8cb"]]);
+const OrderConfirmation = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-9ac8f2f6"]]);
 const __vite_glob_0_14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: OrderConfirmation
@@ -4127,56 +4127,56 @@ const _sfc_main$j = {
           var _a, _b, _c, _d;
           if (_push2) {
             if (__props.order.status !== "delivered") {
-              _push2(`<div class="rounded-md bg-[#ff2832]/10 p-4" data-v-68ea0e85${_scopeId}><div class="flex" data-v-68ea0e85${_scopeId}><div class="flex-shrink-0" data-v-68ea0e85${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#ff2832]" viewBox="0 0 20 20" fill="currentColor" data-v-68ea0e85${_scopeId}><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clip-rule="evenodd" data-v-68ea0e85${_scopeId}></path></svg></div><div class="ml-3" data-v-68ea0e85${_scopeId}><h3 class="text-sm my-0 font-medium text-[#ff2832]" data-v-68ea0e85${_scopeId}>${ssrInterpolate(((_a = statusMessages[__props.order.status]) == null ? void 0 : _a.title) || "Order Processing")}</h3><div class="mt-2 text-sm text-[#ff2832]/80" data-v-68ea0e85${_scopeId}><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(((_b = statusMessages[__props.order.status]) == null ? void 0 : _b.message) || "Your order is being processed")}</p></div></div></div></div>`);
+              _push2(`<div class="rounded-md bg-[#ff2832]/10 p-4" data-v-e734b93b${_scopeId}><div class="flex" data-v-e734b93b${_scopeId}><div class="flex-shrink-0" data-v-e734b93b${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#ff2832]" viewBox="0 0 20 20" fill="currentColor" data-v-e734b93b${_scopeId}><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2h-1V9z" clip-rule="evenodd" data-v-e734b93b${_scopeId}></path></svg></div><div class="ml-3" data-v-e734b93b${_scopeId}><h3 class="text-sm my-0 font-medium text-[#ff2832]" data-v-e734b93b${_scopeId}>${ssrInterpolate(((_a = statusMessages[__props.order.status]) == null ? void 0 : _a.title) || "Order Processing")}</h3><div class="mt-2 text-sm text-[#ff2832]/80" data-v-e734b93b${_scopeId}><p data-v-e734b93b${_scopeId}>${ssrInterpolate(((_b = statusMessages[__props.order.status]) == null ? void 0 : _b.message) || "Your order is being processed")}</p></div></div></div></div>`);
             } else {
               _push2(`<!---->`);
             }
-            _push2(`<div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-68ea0e85${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-68ea0e85${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>Order Summary</h2></div><div class="divide-y divide-[#e6e3de]" data-v-68ea0e85${_scopeId}><!--[-->`);
+            _push2(`<div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-e734b93b${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-e734b93b${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-e734b93b${_scopeId}>Order Summary</h2></div><div class="divide-y divide-[#e6e3de]" data-v-e734b93b${_scopeId}><!--[-->`);
             ssrRenderList(__props.order.items, (item) => {
-              _push2(`<div class="p-6" data-v-68ea0e85${_scopeId}><div class="flex flex-col sm:flex-row gap-2" data-v-68ea0e85${_scopeId}><div class="flex-shrink-0" data-v-68ea0e85${_scopeId}><img${ssrRenderAttr("src", getImage(item))}${ssrRenderAttr("alt", item.product.name)} class="w-20 h-20 rounded-md object-cover" data-v-68ea0e85${_scopeId}></div><div class="sm:mt-0 sm:ml-6 flex-1" data-v-68ea0e85${_scopeId}><div class="flex items-start justify-between" data-v-68ea0e85${_scopeId}><div data-v-68ea0e85${_scopeId}><h4 class="text-sm font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>${ssrInterpolate(item.product.name)}</h4>`);
+              _push2(`<div class="p-6" data-v-e734b93b${_scopeId}><div class="flex flex-col sm:flex-row gap-2" data-v-e734b93b${_scopeId}><div class="flex-shrink-0" data-v-e734b93b${_scopeId}><img${ssrRenderAttr("src", getImage(item))}${ssrRenderAttr("alt", item.product.name)} class="w-20 h-20 rounded-md object-cover" data-v-e734b93b${_scopeId}></div><div class="sm:mt-0 sm:ml-6 flex-1" data-v-e734b93b${_scopeId}><div class="flex items-start justify-between" data-v-e734b93b${_scopeId}><div data-v-e734b93b${_scopeId}><h4 class="text-sm font-medium text-[#444444]" data-v-e734b93b${_scopeId}>${ssrInterpolate(item.product.name)}</h4>`);
               if (item.variant) {
-                _push2(`<p class="mt-1 text-sm text-[#444444]/60" data-v-68ea0e85${_scopeId}><!--[-->`);
+                _push2(`<p class="mt-1 text-sm text-[#444444]/60" data-v-e734b93b${_scopeId}><!--[-->`);
                 ssrRenderList(variantAttributes(item.variant), ([attr, value]) => {
-                  _push2(`<span class="d-block" data-v-68ea0e85${_scopeId}><strong data-v-68ea0e85${_scopeId}>${ssrInterpolate(attr)}</strong>: ${ssrInterpolate(value)}</span>`);
+                  _push2(`<span class="d-block" data-v-e734b93b${_scopeId}><strong data-v-e734b93b${_scopeId}>${ssrInterpolate(attr)}</strong>: ${ssrInterpolate(value)}</span>`);
                 });
                 _push2(`<!--]--></p>`);
               } else {
                 _push2(`<!---->`);
               }
-              _push2(`</div><p class="text-sm font-medium text-[#444444] ml-4" data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(item.price))}</p></div><div class="mt-2 flex items-center justify-between" data-v-68ea0e85${_scopeId}><p class="text-sm text-[#444444]/60" data-v-68ea0e85${_scopeId}> Qty: ${ssrInterpolate(item.qty)}</p><p class="text-sm font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(item.price * item.qty))}</p></div></div></div></div>`);
+              _push2(`</div><p class="text-sm font-medium text-[#444444] ml-4" data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(item.price))}</p></div><div class="mt-2 flex items-center justify-between" data-v-e734b93b${_scopeId}><p class="text-sm text-[#444444]/60" data-v-e734b93b${_scopeId}> Qty: ${ssrInterpolate(item.qty)}</p><p class="text-sm font-medium text-[#444444]" data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(item.price * item.qty))}</p></div></div></div></div>`);
             });
-            _push2(`<!--]--></div><div class="p-6 border-t border-[#e6e3de]" data-v-68ea0e85${_scopeId}><div class="space-y-4" data-v-68ea0e85${_scopeId}><div class="flex justify-between text-sm text-[#444444]" data-v-68ea0e85${_scopeId}><span data-v-68ea0e85${_scopeId}>Subtotal</span><span data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.subTotal))}</span></div><div class="flex justify-between text-sm text-[#444444]" data-v-68ea0e85${_scopeId}><span data-v-68ea0e85${_scopeId}>Shipping</span><span data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.shipCost))}</span></div><div class="flex justify-between text-sm text-[#444444]" data-v-68ea0e85${_scopeId}><span data-v-68ea0e85${_scopeId}>Tax</span><span data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.tax))}</span></div><div class="flex justify-between text-base font-medium text-[#444444] pt-2 border-t border-[#e6e3de] mt-2" data-v-68ea0e85${_scopeId}><span data-v-68ea0e85${_scopeId}>Total</span><span data-v-68ea0e85${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.total))}</span></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-v-68ea0e85${_scopeId}><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-68ea0e85${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-68ea0e85${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>Shipping Information</h2></div><div class="p-6" data-v-68ea0e85${_scopeId}>`);
+            _push2(`<!--]--></div><div class="p-6 border-t border-[#e6e3de]" data-v-e734b93b${_scopeId}><div class="space-y-4" data-v-e734b93b${_scopeId}><div class="flex justify-between text-sm text-[#444444]" data-v-e734b93b${_scopeId}><span data-v-e734b93b${_scopeId}>Subtotal</span><span data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.subTotal))}</span></div><div class="flex justify-between text-sm text-[#444444]" data-v-e734b93b${_scopeId}><span data-v-e734b93b${_scopeId}>Shipping</span><span data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.shipCost))}</span></div><div class="flex justify-between text-sm text-[#444444]" data-v-e734b93b${_scopeId}><span data-v-e734b93b${_scopeId}>Tax</span><span data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.tax))}</span></div><div class="flex justify-between text-base font-medium text-[#444444] pt-2 border-t border-[#e6e3de] mt-2" data-v-e734b93b${_scopeId}><span data-v-e734b93b${_scopeId}>Total</span><span data-v-e734b93b${_scopeId}>${ssrInterpolate(formatCurrency(__props.order.total))}</span></div></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6" data-v-e734b93b${_scopeId}><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-e734b93b${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-e734b93b${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-e734b93b${_scopeId}>Shipping Information</h2></div><div class="p-6" data-v-e734b93b${_scopeId}>`);
             if (__props.order.shipping) {
-              _push2(`<div class="text-sm text-[#444444] space-y-2" data-v-68ea0e85${_scopeId}><p class="font-medium" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.name)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.address_1)}</p>`);
+              _push2(`<div class="text-sm text-[#444444] space-y-2" data-v-e734b93b${_scopeId}><p class="font-medium" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.name)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.address_1)}</p>`);
               if (__props.order.shipping.address_2) {
-                _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.address_2)}</p>`);
+                _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.address_2)}</p>`);
               } else {
                 _push2(`<!---->`);
               }
-              _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.city)}, ${ssrInterpolate(__props.order.shipping.state)} ${ssrInterpolate(__props.order.shipping.zip)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.country)}</p><p class="mt-4" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.shipping.phone)}</p></div>`);
+              _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.city)}, ${ssrInterpolate(__props.order.shipping.state)} ${ssrInterpolate(__props.order.shipping.zip)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.country)}</p><p class="mt-4" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.shipping.phone)}</p></div>`);
             } else {
-              _push2(`<div class="text-sm text-[#444444] space-y-2" data-v-68ea0e85${_scopeId}><p class="font-medium" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.name)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.address_1)}</p>`);
+              _push2(`<div class="text-sm text-[#444444] space-y-2" data-v-e734b93b${_scopeId}><p class="font-medium" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.name)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.address_1)}</p>`);
               if (__props.order.address_2) {
-                _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.address_2)}</p>`);
+                _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.address_2)}</p>`);
               } else {
                 _push2(`<!---->`);
               }
-              _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.city)}, ${ssrInterpolate(__props.order.province)} ${ssrInterpolate(__props.order.zipCode)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.country)}</p><p class="mt-4" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.phone)}</p></div>`);
+              _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.city)}, ${ssrInterpolate(__props.order.province)} ${ssrInterpolate(__props.order.zipCode)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.country)}</p><p class="mt-4" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.phone)}</p></div>`);
             }
-            _push2(`</div></div><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-68ea0e85${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-68ea0e85${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>Payment Information</h2></div><div class="p-6" data-v-68ea0e85${_scopeId}><div class="flex items-center" data-v-68ea0e85${_scopeId}><div class="flex-shrink-0" data-v-68ea0e85${_scopeId}><div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-68ea0e85${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor" className="size-6" data-v-68ea0e85${_scopeId}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" data-v-68ea0e85${_scopeId}></path></svg></div></div><div class="ml-4" data-v-68ea0e85${_scopeId}><h4 class="text-sm font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>${ssrInterpolate("credit".toUpperCase())} ending in 24564 </h4><p class="text-sm text-[#444444]/60 mt-1" data-v-68ea0e85${_scopeId}> Expires 11/28 </p></div></div><div class="mt-6" data-v-68ea0e85${_scopeId}><h3 class="text-sm font-medium text-[#444444]" data-v-68ea0e85${_scopeId}>Billing Address</h3><div class="text-sm text-[#444444] mt-1 space-y-1" data-v-68ea0e85${_scopeId}><p class="font-medium" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.name)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.address_1)}</p>`);
+            _push2(`</div></div><div class="bg-white rounded-xl shadow-sm overflow-hidden" data-v-e734b93b${_scopeId}><div class="p-6 border-b border-[#e6e3de]" data-v-e734b93b${_scopeId}><h2 class="text-lg font-medium text-[#444444]" data-v-e734b93b${_scopeId}>Payment Information</h2></div><div class="p-6" data-v-e734b93b${_scopeId}><div class="flex items-center" data-v-e734b93b${_scopeId}><div class="flex-shrink-0" data-v-e734b93b${_scopeId}><div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-e734b93b${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor" className="size-6" data-v-e734b93b${_scopeId}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" data-v-e734b93b${_scopeId}></path></svg></div></div><div class="ml-4" data-v-e734b93b${_scopeId}><h4 class="text-sm font-medium text-[#444444]" data-v-e734b93b${_scopeId}>${ssrInterpolate("credit".toUpperCase())} ending in 24564 </h4><p class="text-sm text-[#444444]/60 mt-1" data-v-e734b93b${_scopeId}> Expires 11/28 </p></div></div><div class="mt-6" data-v-e734b93b${_scopeId}><h3 class="text-sm font-medium text-[#444444]" data-v-e734b93b${_scopeId}>Billing Address</h3><div class="text-sm text-[#444444] mt-1 space-y-1" data-v-e734b93b${_scopeId}><p class="font-medium" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.name)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.address_1)}</p>`);
             if (__props.order.address_2) {
-              _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.address_2)}</p>`);
+              _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.address_2)}</p>`);
             } else {
               _push2(`<!---->`);
             }
-            _push2(`<p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.city)}, ${ssrInterpolate(__props.order.province)} ${ssrInterpolate(__props.order.zipCode)}</p><p data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.country)}</p><p class="mt-4" data-v-68ea0e85${_scopeId}>${ssrInterpolate(__props.order.phone)}</p></div></div></div></div></div><div class="flex flex-col sm:flex-row justify-end space-y-3 sm:space-y-0 sm:space-x-3" data-v-68ea0e85${_scopeId}>`);
+            _push2(`<p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.city)}, ${ssrInterpolate(__props.order.province)} ${ssrInterpolate(__props.order.zipCode)}</p><p data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.country)}</p><p class="mt-4" data-v-e734b93b${_scopeId}>${ssrInterpolate(__props.order.phone)}</p></div></div></div></div></div><div class="flex flex-col sm:flex-row justify-end space-y-3 sm:space-y-0 sm:space-x-3" data-v-e734b93b${_scopeId}>`);
             if (__props.order.status === "delivered") {
-              _push2(`<button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-68ea0e85${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-68ea0e85${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" data-v-68ea0e85${_scopeId}></path></svg> Buy Again </button>`);
+              _push2(`<button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-e734b93b${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-e734b93b${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" data-v-e734b93b${_scopeId}></path></svg> Buy Again </button>`);
             } else {
               _push2(`<!---->`);
             }
             if (__props.order.status === "delivered") {
-              _push2(`<button type="button" class="inline-flex items-center px-4 py-2 border border-[#e6e3de] text-sm font-medium rounded-md shadow-sm text-[#444444] bg-white hover:bg-[#e6e3de]/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-68ea0e85${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-68ea0e85${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" data-v-68ea0e85${_scopeId}></path></svg> Get Help </button>`);
+              _push2(`<button type="button" class="inline-flex items-center px-4 py-2 border border-[#e6e3de] text-sm font-medium rounded-md shadow-sm text-[#444444] bg-white hover:bg-[#e6e3de]/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-e734b93b${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-e734b93b${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" data-v-e734b93b${_scopeId}></path></svg> Get Help </button>`);
             } else {
               _push2(`<!---->`);
             }
@@ -4432,7 +4432,7 @@ _sfc_main$j.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/OrderDetails.vue");
   return _sfc_setup$j ? _sfc_setup$j(props, ctx) : void 0;
 };
-const OrderDetails = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-68ea0e85"]]);
+const OrderDetails = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-e734b93b"]]);
 const __vite_glob_0_15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: OrderDetails
@@ -4455,37 +4455,37 @@ const _sfc_main$i = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<div${ssrRenderAttrs(mergeProps({
         class: ["border border-[#e6e3de] rounded-xl p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-200 relative", { "border-[#ff2832]": __props.isDefault }]
-      }, _attrs))} data-v-a9850d3f><div class="flex items-start justify-between" data-v-a9850d3f><div class="flex items-center" data-v-a9850d3f><div class="flex-shrink-0" data-v-a9850d3f>`);
+      }, _attrs))} data-v-cd9ee3c3><div class="flex items-start justify-between" data-v-cd9ee3c3><div class="flex items-center" data-v-cd9ee3c3><div class="flex-shrink-0" data-v-cd9ee3c3>`);
       if (__props.paymentMethod.type === "card") {
-        _push(`<div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-a9850d3f><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor" className="size-6" data-v-a9850d3f><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" data-v-a9850d3f></path></svg></div>`);
+        _push(`<div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-cd9ee3c3><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="{1.5}" stroke="currentColor" className="size-6" data-v-cd9ee3c3><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" data-v-cd9ee3c3></path></svg></div>`);
       } else if (__props.paymentMethod.type === "paypal") {
-        _push(`<div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-a9850d3f><svg class="h-6 w-6 text-[#00457C]" viewBox="0 0 24 24" fill="currentColor" data-v-a9850d3f><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm15.147-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.032.175-.056.306-.23 1.888-.892 6.12-1.003 6.85L19.4 15.829l1.61-9.912zm-1.127-3.562c-.202-1.207-.713-2.03-1.608-2.73-.899-.7-2.146-1.15-3.725-1.15h-7.46a.641.641 0 0 0-.633.74l2.108 13.365a.873.873 0 0 0 .862.74h2.98c4.226 0 7.48-1.402 8.742-5.8.452-1.848.528-3.462.252-4.735a4.615 4.615 0 0 0-.518-1.43z" data-v-a9850d3f></path></svg></div>`);
+        _push(`<div class="h-10 w-16 rounded-md bg-[#e6e3de]/30 flex items-center justify-center" data-v-cd9ee3c3><svg class="h-6 w-6 text-[#00457C]" viewBox="0 0 24 24" fill="currentColor" data-v-cd9ee3c3><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm15.147-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.032.175-.056.306-.23 1.888-.892 6.12-1.003 6.85L19.4 15.829l1.61-9.912zm-1.127-3.562c-.202-1.207-.713-2.03-1.608-2.73-.899-.7-2.146-1.15-3.725-1.15h-7.46a.641.641 0 0 0-.633.74l2.108 13.365a.873.873 0 0 0 .862.74h2.98c4.226 0 7.48-1.402 8.742-5.8.452-1.848.528-3.462.252-4.735a4.615 4.615 0 0 0-.518-1.43z" data-v-cd9ee3c3></path></svg></div>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`</div><div class="ml-4" data-v-a9850d3f><h4 class="text-sm font-medium text-[#444444]" data-v-a9850d3f>`);
+      _push(`</div><div class="ml-4" data-v-cd9ee3c3><h4 class="text-sm font-medium text-[#444444]" data-v-cd9ee3c3>`);
       if (__props.paymentMethod.type === "card") {
-        _push(`<span data-v-a9850d3f>${ssrInterpolate(__props.paymentMethod.brand.toUpperCase())} ending in ${ssrInterpolate(__props.paymentMethod.last4)}</span>`);
+        _push(`<span data-v-cd9ee3c3>${ssrInterpolate(__props.paymentMethod.brand.toUpperCase())} ending in ${ssrInterpolate(__props.paymentMethod.last4)}</span>`);
       } else if (__props.paymentMethod.type === "paypal") {
-        _push(`<span data-v-a9850d3f> PayPal (${ssrInterpolate(__props.paymentMethod.email)}) </span>`);
+        _push(`<span data-v-cd9ee3c3> PayPal (${ssrInterpolate(__props.paymentMethod.email)}) </span>`);
       } else {
         _push(`<!---->`);
       }
       _push(`</h4>`);
       if (__props.paymentMethod.type === "card") {
-        _push(`<p class="text-sm text-[#444444]/60 mt-1" data-v-a9850d3f> Expires ${ssrInterpolate(__props.paymentMethod.exp_month)}/${ssrInterpolate(__props.paymentMethod.exp_year.toString().slice(-2))}</p>`);
+        _push(`<p class="text-sm text-[#444444]/60 mt-1" data-v-cd9ee3c3> Expires ${ssrInterpolate(__props.paymentMethod.exp_month)}/${ssrInterpolate(__props.paymentMethod.exp_year.toString().slice(-2))}</p>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`</div></div><div class="flex space-x-2" data-v-a9850d3f>`);
+      _push(`</div></div><div class="flex space-x-2" data-v-cd9ee3c3>`);
       if (__props.isDefault) {
-        _push(`<div data-v-a9850d3f><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#ff2832]/10 text-[#ff2832]" data-v-a9850d3f> Default </span></div>`);
+        _push(`<div data-v-cd9ee3c3><span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#ff2832]/10 text-[#ff2832]" data-v-cd9ee3c3> Default </span></div>`);
       } else {
         _push(`<!---->`);
       }
-      _push(`<button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-a9850d3f><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-a9850d3f><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" data-v-a9850d3f></path></svg></button></div></div><div class="default-badge absolute" data-v-a9850d3f>`);
+      _push(`<button class="text-[#444444]/60 hover:text-[#ff2832] transition-colors duration-200" data-v-cd9ee3c3><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" data-v-cd9ee3c3><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" data-v-cd9ee3c3></path></svg></button></div></div><div class="default-badge absolute" data-v-cd9ee3c3>`);
       if (!__props.isDefault) {
-        _push(`<button class="text-sm font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-a9850d3f> Set Default </button>`);
+        _push(`<button class="text-sm font-medium text-[#ff2832] hover:text-[#ff2832]/80 transition-colors duration-200" data-v-cd9ee3c3> Set Default </button>`);
       } else {
         _push(`<!---->`);
       }
@@ -4499,7 +4499,7 @@ _sfc_main$i.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/PaymentMethodCard.vue");
   return _sfc_setup$i ? _sfc_setup$i(props, ctx) : void 0;
 };
-const PaymentMethodCard = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-a9850d3f"]]);
+const PaymentMethodCard = /* @__PURE__ */ _export_sfc(_sfc_main$i, [["__scopeId", "data-v-cd9ee3c3"]]);
 const _sfc_main$h = {
   __name: "Modal",
   __ssrInlineRender: true,
@@ -4914,9 +4914,9 @@ const _sfc_main$f = {
       _push(ssrRenderComponent(AuthenticatedLayout, _attrs, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
           if (_push2) {
-            _push2(`<button class="w-full flex items-center justify-center p-6 border-2 border-dashed border-[#e6e3de] rounded-xl hover:border-[#ff2832]/50 transition-all duration-200 group" data-v-b98657f7${_scopeId}><div class="text-center" data-v-b98657f7${_scopeId}><div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#ff2832]/10 group-hover:bg-[#ff2832]/20 transition-colors duration-200" data-v-b98657f7${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#ff2832]" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-b98657f7${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" data-v-b98657f7${_scopeId}></path></svg></div><h3 class="mt-2 text-sm font-medium text-[#444444] group-hover:text-[#ff2832] transition-colors duration-200" data-v-b98657f7${_scopeId}> Add Payment Method </h3></div></button><div class="space-y-4" data-v-b98657f7${_scopeId}>`);
+            _push2(`<button class="w-full flex items-center justify-center p-6 border-2 border-dashed border-[#e6e3de] rounded-xl hover:border-[#ff2832]/50 transition-all duration-200 group" data-v-c8130660${_scopeId}><div class="text-center" data-v-c8130660${_scopeId}><div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-[#ff2832]/10 group-hover:bg-[#ff2832]/20 transition-colors duration-200" data-v-c8130660${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#ff2832]" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-c8130660${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" data-v-c8130660${_scopeId}></path></svg></div><h3 class="mt-2 text-sm font-medium text-[#444444] group-hover:text-[#ff2832] transition-colors duration-200" data-v-c8130660${_scopeId}> Add Payment Method </h3></div></button><div class="space-y-4" data-v-c8130660${_scopeId}>`);
             if (defaultPaymentMethod.value) {
-              _push2(`<div class="relative" data-v-b98657f7${_scopeId}>`);
+              _push2(`<div class="relative" data-v-c8130660${_scopeId}>`);
               _push2(ssrRenderComponent(PaymentMethodCard, {
                 "payment-method": defaultPaymentMethod.value,
                 "is-default": true,
@@ -4930,7 +4930,7 @@ const _sfc_main$f = {
             }
             _push2(`<!--[-->`);
             ssrRenderList(otherPaymentMethods.value, (method) => {
-              _push2(`<div class="relative" data-v-b98657f7${_scopeId}>`);
+              _push2(`<div class="relative" data-v-c8130660${_scopeId}>`);
               _push2(ssrRenderComponent(PaymentMethodCard, {
                 "payment-method": method,
                 "is-default": false,
@@ -4942,7 +4942,7 @@ const _sfc_main$f = {
             });
             _push2(`<!--]--></div>`);
             if (paymentMethods.value.length === 0) {
-              _push2(`<div class="text-center py-12" data-v-b98657f7${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-12 w-12 text-[#444444]/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-b98657f7${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" data-v-b98657f7${_scopeId}></path></svg><h3 class="mt-2 text-sm font-medium text-[#444444]" data-v-b98657f7${_scopeId}>No payment methods</h3><p class="mt-1 text-sm text-[#444444]/60" data-v-b98657f7${_scopeId}>Add a payment method to make checkout faster</p><div class="mt-6" data-v-b98657f7${_scopeId}><button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-b98657f7${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-b98657f7${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" data-v-b98657f7${_scopeId}></path></svg> Add Payment Method </button></div></div>`);
+              _push2(`<div class="text-center py-12" data-v-c8130660${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="mx-auto h-12 w-12 text-[#444444]/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-c8130660${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" data-v-c8130660${_scopeId}></path></svg><h3 class="mt-2 text-sm font-medium text-[#444444]" data-v-c8130660${_scopeId}>No payment methods</h3><p class="mt-1 text-sm text-[#444444]/60" data-v-c8130660${_scopeId}>Add a payment method to make checkout faster</p><div class="mt-6" data-v-c8130660${_scopeId}><button type="button" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#ff2832] hover:bg-[#ff2832]/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff2832]/50 transition-all duration-200" data-v-c8130660${_scopeId}><svg xmlns="http://www.w3.org/2000/svg" class="-ml-1 mr-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-v-c8130660${_scopeId}><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" data-v-c8130660${_scopeId}></path></svg> Add Payment Method </button></div></div>`);
             } else {
               _push2(`<!---->`);
             }
@@ -5072,7 +5072,7 @@ _sfc_main$f.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/Pages/PaymentMethods.vue");
   return _sfc_setup$f ? _sfc_setup$f(props, ctx) : void 0;
 };
-const PaymentMethods = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-b98657f7"]]);
+const PaymentMethods = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-c8130660"]]);
 const __vite_glob_0_16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: PaymentMethods
@@ -5125,13 +5125,13 @@ const _sfc_main$e = {
       _push(`<a${ssrRenderAttrs(mergeProps({
         class: "btn btn-prime d-flex justify-content-center items-center gap-3",
         disabled: loading.value || props.disabled ? true : void 0
-      }, _attrs))} data-v-ee1c74b5>`);
+      }, _attrs))} data-v-39eafb8b>`);
       if (loading.value) {
         _push(ssrRenderComponent(Spinner, null, null, _parent));
       } else {
         _push(`<!---->`);
       }
-      _push(`<span data-v-ee1c74b5>Add To Cart </span></a>`);
+      _push(`<span data-v-39eafb8b>Add To Cart </span></a>`);
     };
   }
 };
@@ -5141,7 +5141,7 @@ _sfc_main$e.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/AddToCartButton.vue");
   return _sfc_setup$e ? _sfc_setup$e(props, ctx) : void 0;
 };
-const AddToCartButton = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["__scopeId", "data-v-ee1c74b5"]]);
+const AddToCartButton = /* @__PURE__ */ _export_sfc(_sfc_main$e, [["__scopeId", "data-v-39eafb8b"]]);
 const _sfc_main$d = {
   name: "ReviewForm",
   components: {
@@ -6305,7 +6305,7 @@ const _sfc_main$3 = {
       return Object.keys(FILTERS).some((key) => FILTERS[key].length) || FilterPrice.value;
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "col-lg-3 col-md-4 col-sm-4 col-xs-12 sitebar position-sticky" }, _attrs))} data-v-f19738fb>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "col-lg-3 col-md-4 col-sm-4 col-xs-12 sitebar position-sticky" }, _attrs))} data-v-e6f7c5bc>`);
       _push(ssrRenderComponent(_sfc_main$4, {
         title: "category",
         items: props.categories,
@@ -6333,9 +6333,9 @@ const _sfc_main$3 = {
         modelValue: FILTERS.size,
         "onUpdate:modelValue": ($event) => FILTERS.size = $event
       }, null, _parent));
-      _push(`<div class="widget mercado-widget filter-widget price-filter" data-v-f19738fb><h2 class="widget-title mb-2" data-v-f19738fb>Price</h2><p class="row mx-0 pricefiltercheckbox" data-v-f19738fb><input type="checkbox" id="useprice" class="input"${ssrIncludeBooleanAttr(Array.isArray(FilterPrice.value) ? ssrLooseContain(FilterPrice.value, null) : FilterPrice.value) ? " checked" : ""} data-v-f19738fb><label for="useprice" class="colors" data-v-f19738fb>Apply Price Filter</label></p><div class="widget-content" data-v-f19738fb><div id="slider-range" data-v-f19738fb></div><p data-v-f19738fb><label for="amount" data-v-f19738fb>Price:</label><input type="text" id="amount" readonly data-v-f19738fb></p></div><input type="hidden" id="minprice"${ssrRenderAttr("value", RANGE_PRICE[0])} data-v-f19738fb><input type="hidden" id="maxprice"${ssrRenderAttr("value", RANGE_PRICE[1])} data-v-f19738fb><input type="hidden" id="RangeVlaue"${ssrRenderAttr("value", priceRangeValue.value)} data-v-f19738fb></div><div class="d-flex gap-2 flex-wrap" data-v-f19738fb><button${ssrIncludeBooleanAttr(!filtersHasValues.value) ? " disabled" : ""} class="border border-[#e6e3de] bg-[#ff2832] text-white hover:text-black hover:bg-[#ddd] py-3 px-4 text-center font-medium transition-colors duration-200 shadow-sm" data-v-f19738fb> FILTER </button>`);
+      _push(`<div class="widget mercado-widget filter-widget price-filter" data-v-e6f7c5bc><h2 class="widget-title mb-2" data-v-e6f7c5bc>Price</h2><p class="row mx-0 pricefiltercheckbox" data-v-e6f7c5bc><input type="checkbox" id="useprice" class="input"${ssrIncludeBooleanAttr(Array.isArray(FilterPrice.value) ? ssrLooseContain(FilterPrice.value, null) : FilterPrice.value) ? " checked" : ""} data-v-e6f7c5bc><label for="useprice" class="colors" data-v-e6f7c5bc>Apply Price Filter</label></p><div class="widget-content" data-v-e6f7c5bc><div id="slider-range" data-v-e6f7c5bc></div><p data-v-e6f7c5bc><label for="amount" data-v-e6f7c5bc>Price:</label><input type="text" id="amount" readonly data-v-e6f7c5bc></p></div><input type="hidden" id="minprice"${ssrRenderAttr("value", RANGE_PRICE[0])} data-v-e6f7c5bc><input type="hidden" id="maxprice"${ssrRenderAttr("value", RANGE_PRICE[1])} data-v-e6f7c5bc><input type="hidden" id="RangeVlaue"${ssrRenderAttr("value", priceRangeValue.value)} data-v-e6f7c5bc></div><div class="d-flex gap-2 flex-wrap" data-v-e6f7c5bc><button${ssrIncludeBooleanAttr(!filtersHasValues.value) ? " disabled" : ""} class="border border-[#e6e3de] bg-[#ff2832] text-white hover:text-black hover:bg-[#ddd] py-3 px-4 text-center font-medium transition-colors duration-200 shadow-sm" data-v-e6f7c5bc> FILTER </button>`);
       if (hasAppliedFilters.value) {
-        _push(`<button class="flex-1 bg-[#444444] hover:bg-[#ddd] text-white hover:text-black py-3 px-4 text-center font-medium transition-colors duration-200" data-v-f19738fb> CLEAR FILTER </button>`);
+        _push(`<button class="flex-1 bg-[#444444] hover:bg-[#ddd] text-white hover:text-black py-3 px-4 text-center font-medium transition-colors duration-200" data-v-e6f7c5bc> CLEAR FILTER </button>`);
       } else {
         _push(`<!---->`);
       }
@@ -6349,7 +6349,7 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/FilterSection.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const FilterSection = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-f19738fb"]]);
+const FilterSection = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-e6f7c5bc"]]);
 const _sfc_main$2 = {
   __name: "AddToCartDrawer",
   __ssrInlineRender: true,
@@ -6359,15 +6359,15 @@ const _sfc_main$2 = {
       var _a;
       _push(`<div${ssrRenderAttrs(mergeProps({
         class: ["cart-drawer", { "cart-drawer--open": unref(DRAWER).isOpen }]
-      }, _attrs))} data-v-2b3e3e53><div class="cart-drawer__overlay" data-v-2b3e3e53></div><div class="cart-drawer__content" data-v-2b3e3e53><div class="cart-drawer__header" data-v-2b3e3e53><h2 class="cart-drawer__title" data-v-2b3e3e53>Your Cart</h2><button class="cart-drawer__close" data-v-2b3e3e53><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-2b3e3e53><line x1="18" y1="6" x2="6" y2="18" data-v-2b3e3e53></line><line x1="6" y1="6" x2="18" y2="18" data-v-2b3e3e53></line></svg></button></div>`);
+      }, _attrs))} data-v-d5405f34><div class="cart-drawer__overlay" data-v-d5405f34></div><div class="cart-drawer__content" data-v-d5405f34><div class="cart-drawer__header" data-v-d5405f34><h2 class="cart-drawer__title" data-v-d5405f34>Your Cart</h2><button class="cart-drawer__close" data-v-d5405f34><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-v-d5405f34><line x1="18" y1="6" x2="6" y2="18" data-v-d5405f34></line><line x1="6" y1="6" x2="18" y2="18" data-v-d5405f34></line></svg></button></div>`);
       if (unref(DRAWER).drawerContent) {
-        _push(`<div class="cart-drawer__body" data-v-2b3e3e53><div class="product-gallery" data-v-2b3e3e53><ul data-v-2b3e3e53><!--[-->`);
+        _push(`<div class="cart-drawer__body" data-v-d5405f34><div class="product-gallery" data-v-d5405f34><ul data-v-d5405f34><!--[-->`);
         ssrRenderList(unref(DRAWER).drawerContent.images.split(","), (img, index) => {
-          _push(`<li data-v-2b3e3e53><img${ssrRenderAttr("src", `/assets/images/products/${img}`)} alt="product images" data-v-2b3e3e53></li>`);
+          _push(`<li data-v-d5405f34><img${ssrRenderAttr("src", `/assets/images/products/${img}`)} alt="product images" data-v-d5405f34></li>`);
         });
-        _push(`<!--]--></ul></div><br data-v-2b3e3e53><div data-v-2b3e3e53><h3 class="font-medium mb-3" data-v-2b3e3e53>${ssrInterpolate(unref(DRAWER).drawerContent.name)}</h3><h4 class="font-bold" data-v-2b3e3e53>$${ssrInterpolate(unref(DRAWER).drawerContent.price)}</h4></div>`);
+        _push(`<!--]--></ul></div><br data-v-d5405f34><div data-v-d5405f34><h3 class="font-medium mb-3" data-v-d5405f34>${ssrInterpolate(unref(DRAWER).drawerContent.name)}</h3><h4 class="font-bold" data-v-d5405f34>$${ssrInterpolate(unref(DRAWER).drawerContent.price)}</h4></div>`);
         if ((_a = unref(DRAWER).drawerContent.variants) == null ? void 0 : _a.length) {
-          _push(`<div data-v-2b3e3e53>`);
+          _push(`<div data-v-d5405f34>`);
           _push(ssrRenderComponent(_sfc_main$c, {
             variants: unref(DRAWER).drawerContent.variants,
             variantType: unref(DRAWER).drawerContent.variantType,
@@ -6375,14 +6375,14 @@ const _sfc_main$2 = {
           }, null, _parent));
           _push(`</div>`);
         } else {
-          _push(`<div class="mt-4 mb-2" data-v-2b3e3e53>`);
+          _push(`<div class="mt-4 mb-2" data-v-d5405f34>`);
           _push(ssrRenderComponent(AddToCartButton, {
             productId: unref(DRAWER).drawerContent.id,
             drawer: false
           }, null, _parent));
           _push(`</div>`);
         }
-        _push(`<a${ssrRenderAttr("href", `/products/${unref(DRAWER).drawerContent.slug}`)} class="text-gray-700 underline text-base hover:text-gray-100" data-v-2b3e3e53>view more details</a></div>`);
+        _push(`<a${ssrRenderAttr("href", `/products/${unref(DRAWER).drawerContent.slug}`)} class="text-gray-700 underline text-base hover:text-gray-100" data-v-d5405f34>view more details</a></div>`);
       } else {
         _push(`<!---->`);
       }
@@ -6396,7 +6396,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/AddToCartDrawer.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AddToCartDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-2b3e3e53"]]);
+const AddToCartDrawer = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-d5405f34"]]);
 const _sfc_main$1 = {
   __name: "ProductSkelton",
   __ssrInlineRender: true,
@@ -6410,7 +6410,7 @@ const _sfc_main$1 = {
     return (_ctx, _push, _parent, _attrs) => {
       _push(`<!--[-->`);
       ssrRenderList(__props.count, (product) => {
-        _push(`<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6" data-v-eea89469><div class="product product-style-3 equal-elem" data-v-eea89469><div class="product-thumnail prod-img-ratio" data-v-eea89469><div class="skeleton-image" data-v-eea89469></div></div><div class="product-info" data-v-eea89469><div class="skeleton-title" data-v-eea89469></div><div class="skeleton-price" data-v-eea89469></div><div class="skeleton-button" data-v-eea89469></div></div></div></div>`);
+        _push(`<div class="col-lg-4 col-md-6 col-sm-6 col-xs-6" data-v-3ffeb986><div class="product product-style-3 equal-elem" data-v-3ffeb986><div class="product-thumnail prod-img-ratio" data-v-3ffeb986><div class="skeleton-image" data-v-3ffeb986></div></div><div class="product-info" data-v-3ffeb986><div class="skeleton-title" data-v-3ffeb986></div><div class="skeleton-price" data-v-3ffeb986></div><div class="skeleton-button" data-v-3ffeb986></div></div></div></div>`);
       });
       _push(`<!--]-->`);
     };
@@ -6422,7 +6422,7 @@ _sfc_main$1.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("resources/js/components/ProductSkelton.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
-const ProductSkelton = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-eea89469"]]);
+const ProductSkelton = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3ffeb986"]]);
 const _sfc_main = {
   __name: "Shop",
   __ssrInlineRender: true,
@@ -6437,11 +6437,8 @@ const _sfc_main = {
       return locationURL.split("?")[1];
     });
     const Getproducts = async (url) => {
-      const params = new URLSearchParams(url_search.value);
       try {
-        const { data } = await API.get(url, {
-          params: Object.fromEntries(params.entries())
-        });
+        const { data } = await API.get(url);
         products.value = data.data;
         pagination.value = { ...data, data: void 0 };
       } catch (error) {
@@ -6454,7 +6451,12 @@ const _sfc_main = {
       const pathname = locationURL.split("?")[0];
       return `shop-products/${props.pageType + pathname}`;
     });
-    Getproducts(routeParam.value);
+    function initGettingProducts() {
+      const params = new URLSearchParams(url_search.value);
+      const search = params.toString();
+      Getproducts(search ? `${routeParam.value}?${search}` : routeParam.value);
+    }
+    initGettingProducts();
     const pginationClick = (url) => {
       Getproducts(url);
       window.scrollTo({ top: 140, behavior: "smooth" });

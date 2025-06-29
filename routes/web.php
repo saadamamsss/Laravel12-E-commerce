@@ -9,12 +9,20 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 require __DIR__ . '/auth.php';
 
 
+Route::fallback(function () {
+    return Inertia::render('Errors/NotFound', [
+        'status' => 404,
+        'title' => 'Page Not Found',
+        'message' => 'The page you requested does not exist.'
+    ])->toResponse(request())->setStatusCode(404);
+});
 
 // In your web.php
 Route::get('/', function () {
@@ -49,7 +57,6 @@ Route::get('/about-us', function () {
 Route::get('/contact-us', [ContactController::class, "Index"])->name('contact.index');
 
 Route::post('/send-contact-message', [ContactController::class, "sendContactMessage"])->name('contact.send');
-
 
 Route::get('/{slug}', [ProductController::class, "Index"]);
 

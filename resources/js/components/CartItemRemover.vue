@@ -1,6 +1,6 @@
 <template>
     <div class="delete">
-        <Spinner v-if="loader" />
+        <Spinner v-if="loader" size="small"/>
 
         <a
             v-else

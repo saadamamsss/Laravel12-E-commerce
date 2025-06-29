@@ -117,7 +117,8 @@ import ImageComponent from "@/components/ImageComponent.vue";
 import AddToCartDrawer from "@/components/AddToCartDrawer.vue";
 import { API } from "@/utils/api.js";
 import { Link, usePage } from "@inertiajs/vue3";
-import { route } from "ziggy-js";
+import { route} from "ziggy-js";
+
 import DefaultLayout from "../layouts/DefaultLayout.vue";
 import ProductSkelton from "@/components/ProductSkelton.vue";
 
